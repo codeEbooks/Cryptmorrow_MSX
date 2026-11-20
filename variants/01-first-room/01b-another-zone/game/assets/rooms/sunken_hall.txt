@@ -1,0 +1,19 @@
+# Cryptmorrow ZX room 9, atrio. Symbols: see dungeon.txt.
+# Ported from the C64 map: 20 columns become 16.
+# Door C to the east: the way into the amber zone.
+name: SUNKEN HALL
+door: C
+object: treasure 7 7
+enemy: skeleton 11 6 h fast
+enemy: bat 4 6
+map:
+#######EE#######
+####T##..##t####
+##............##
+##..w......w..##
+##..w.P..P.w..##
+##....P..P.....D
+##.m...........D
+##..w......w..##
+##..w.m....w..##
+################

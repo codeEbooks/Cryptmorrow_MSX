@@ -1,0 +1,2107 @@
+{
+ "checks": [
+  {
+   "check": "build: 03x-too-fast/game/build/manifest.json without problems; the cartridge = its manifest's (built by the folder's tools)",
+   "pass": true,
+   "detail": "c9267493072be679"
+  },
+  {
+   "check": "data: the rooms' records in the cartridge (door, objects, enemies) = the room files (the doors' tiles not yet in the cartridge)",
+   "pass": true,
+   "detail": "20 objects, 4 doors, 34 enemies"
+  },
+  {
+   "check": "data: the explorer's 16 sprite shapes in the VRAM after INIT = art_pieces.HERO_FRAMES, skin and clothes (msx_model.hero_colour)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "build: the cartridge of room 00 (START_ROOM) from the step's sources",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "build: the cartridge of room 02 (START_ROOM) from the step's sources",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "build: the cartridge of room 03 (START_ROOM) from the step's sources",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "build: the cartridge of room 04 (START_ROOM) from the step's sources",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "build: the cartridge of room 05 (START_ROOM) from the step's sources",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "build: the cartridge of room 06 (START_ROOM) from the step's sources",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "build: the cartridge of room 07 (START_ROOM) from the step's sources",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "build: the cartridge of room 08 (START_ROOM) from the step's sources",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "build: the cartridge of room 09 (START_ROOM) from the step's sources",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "build: the cartridge of room 10 (START_ROOM) from the step's sources",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "build: the cartridge of room 11 (START_ROOM) from the step's sources",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "build: the cartridge of room 12 (START_ROOM) from the step's sources",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "build: the cartridge of room 13 (START_ROOM) from the step's sources",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "build: the cartridge of room 14 (START_ROOM) from the step's sources",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "build: the cartridge of room 15 (START_ROOM) from the step's sources",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "build: the step's sources assembled again with START_ROOM = 1 = the step's cartridge",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "the route: every opening of the 16 rooms crossed (27), both ways but 3 whose way back is a shut door; no door crossed",
+   "pass": true,
+   "detail": "28 crossings, one way ['10-9', '7-6', '8-4']"
+  },
+  {
+   "check": "eu (50 Hz) room 01: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "eu (50 Hz) room 00: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "eu (50 Hz) room 02: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "eu (50 Hz) room 03: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "eu (50 Hz) room 04: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "eu (50 Hz) room 05: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "eu (50 Hz) room 06: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "eu (50 Hz) room 07: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "eu (50 Hz) room 08: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "eu (50 Hz) room 09: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "eu (50 Hz) room 10: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "eu (50 Hz) room 11: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "eu (50 Hz) room 12: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "eu (50 Hz) room 13: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "eu (50 Hz) room 14: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "eu (50 Hz) room 15: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "eu (50 Hz) the 16 rooms, each from its cartridge, out through every opening and back, 150 passes of random input (28 changes of room): frame_ready every pass, the input byte = keys + joystick, room and explorer = the model, keys, seals, score, energy (the HUD's values), the sprite list in the VDP = the model, screen = model, every pass, frames = interrupts, room, zone, stack, VDP registers of Screen 2, solid map in RAM = the room with its door, every change hidden, else one interrupt a pass, nothing written to the PSG's sound registers (0-13)",
+   "pass": true,
+   "detail": "5966 passes"
+  },
+  {
+   "check": "eu (50 Hz) room 01: the RAM and the VRAM filled at random (two fillings, 500 passes): every pass = the model; the RAM written only in the areas of vars.asm and the stack",
+   "pass": true,
+   "detail": "stack 22 bytes"
+  },
+  {
+   "check": "eu (50 Hz) room 01: openMSX's screenshot of pass 32 = one of the bench's last pictures",
+   "pass": true,
+   "detail": "pass 32"
+  },
+  {
+   "check": "eu (50 Hz) the 16 rooms: openMSX = the bench, every pass",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "int (60 Hz) room 01: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": false,
+   "detail": "{'29T': [(4412021, 17088, 23), (4412044, 17088, 23)], 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "int (60 Hz) room 00: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "int (60 Hz) room 02: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "int (60 Hz) room 03: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": false,
+   "detail": "{'29T': [(4352283, 17088, 23), (4352306, 17088, 23)], 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "int (60 Hz) room 04: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "int (60 Hz) room 05: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "int (60 Hz) room 06: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "int (60 Hz) room 07: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "int (60 Hz) room 08: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": false,
+   "detail": "{'29T': [(6502783, 17088, 23), (6502806, 17088, 23)], 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "int (60 Hz) room 09: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "int (60 Hz) room 10: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": false,
+   "detail": "{'29T': [(4292551, 17088, 23), (4292574, 17088, 23)], 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "int (60 Hz) room 11: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "int (60 Hz) room 12: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "int (60 Hz) room 13: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "int (60 Hz) room 14: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "int (60 Hz) room 15: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "int (60 Hz) the 16 rooms, each from its cartridge, out through every opening and back, 150 passes of random input (28 changes of room): frame_ready every pass, the input byte = keys + joystick, room and explorer = the model, keys, seals, score, energy (the HUD's values), the sprite list in the VDP = the model, screen = model, every pass, frames = interrupts, room, zone, stack, VDP registers of Screen 2, solid map in RAM = the room with its door, every change hidden, else one interrupt a pass, nothing written to the PSG's sound registers (0-13)",
+   "pass": true,
+   "detail": "5966 passes"
+  },
+  {
+   "check": "int (60 Hz) room 01: the RAM and the VRAM filled at random (two fillings, 500 passes): every pass = the model; the RAM written only in the areas of vars.asm and the stack",
+   "pass": false,
+   "detail": "seed 1 29T: [(4412021, 17088, 23), (4412044, 17088, 23)]"
+  },
+  {
+   "check": "int (60 Hz) room 01: openMSX's screenshot of pass 32 = one of the bench's last pictures",
+   "pass": true,
+   "detail": "pass 32"
+  },
+  {
+   "check": "int (60 Hz) the 16 rooms: openMSX = the bench, every pass",
+   "pass": false,
+   "detail": "room 01: pass 541: VRAM"
+  }
+ ],
+ "facts": {
+  "step": "03-dungeon",
+  "cartridge": "c9267493072be679",
+  "data": {
+   "objects": 20,
+   "doors": 4,
+   "enemies": 34
+  },
+  "openings": {
+   "openings": 27,
+   "crossings": 28,
+   "one_way": [
+    "10-9",
+    "7-6",
+    "8-4"
+   ]
+  },
+  "routes": {
+   "room 01": {
+    "room": 1,
+    "crossed": [
+     [
+      1,
+      "south",
+      5
+     ],
+     [
+      5,
+      "south",
+      9
+     ],
+     [
+      9,
+      "north",
+      5
+     ],
+     [
+      5,
+      "west",
+      4
+     ],
+     [
+      4,
+      "north",
+      0
+     ],
+     [
+      0,
+      "south",
+      4
+     ],
+     [
+      4,
+      "east",
+      5
+     ],
+     [
+      5,
+      "east",
+      6
+     ],
+     [
+      6,
+      "north",
+      2
+     ],
+     [
+      2,
+      "south",
+      6
+     ],
+     [
+      6,
+      "west",
+      5
+     ],
+     [
+      5,
+      "north",
+      1
+     ]
+    ],
+    "rooms": 12,
+    "passes": 1746
+   },
+   "room 00": {
+    "room": 0,
+    "crossed": [],
+    "rooms": 0,
+    "passes": 152
+   },
+   "room 02": {
+    "room": 2,
+    "crossed": [],
+    "rooms": 0,
+    "passes": 152
+   },
+   "room 03": {
+    "room": 3,
+    "crossed": [
+     [
+      3,
+      "south",
+      7
+     ],
+     [
+      7,
+      "south",
+      11
+     ],
+     [
+      11,
+      "north",
+      7
+     ],
+     [
+      7,
+      "north",
+      3
+     ],
+     [
+      3,
+      "south",
+      7
+     ],
+     [
+      7,
+      "west",
+      6
+     ]
+    ],
+    "rooms": 6,
+    "passes": 772
+   },
+   "room 04": {
+    "room": 4,
+    "crossed": [],
+    "rooms": 0,
+    "passes": 152
+   },
+   "room 05": {
+    "room": 5,
+    "crossed": [],
+    "rooms": 0,
+    "passes": 152
+   },
+   "room 06": {
+    "room": 6,
+    "crossed": [],
+    "rooms": 0,
+    "passes": 152
+   },
+   "room 07": {
+    "room": 7,
+    "crossed": [],
+    "rooms": 0,
+    "passes": 152
+   },
+   "room 08": {
+    "room": 8,
+    "crossed": [
+     [
+      8,
+      "south",
+      12
+     ],
+     [
+      12,
+      "east",
+      13
+     ],
+     [
+      13,
+      "west",
+      12
+     ],
+     [
+      12,
+      "north",
+      8
+     ],
+     [
+      8,
+      "north",
+      4
+     ]
+    ],
+    "rooms": 5,
+    "passes": 872
+   },
+   "room 09": {
+    "room": 9,
+    "crossed": [],
+    "rooms": 0,
+    "passes": 152
+   },
+   "room 10": {
+    "room": 10,
+    "crossed": [
+     [
+      10,
+      "south",
+      14
+     ],
+     [
+      14,
+      "east",
+      15
+     ],
+     [
+      15,
+      "west",
+      14
+     ],
+     [
+      14,
+      "north",
+      10
+     ],
+     [
+      10,
+      "west",
+      9
+     ]
+    ],
+    "rooms": 5,
+    "passes": 752
+   },
+   "room 11": {
+    "room": 11,
+    "crossed": [],
+    "rooms": 0,
+    "passes": 152
+   },
+   "room 12": {
+    "room": 12,
+    "crossed": [],
+    "rooms": 0,
+    "passes": 152
+   },
+   "room 13": {
+    "room": 13,
+    "crossed": [],
+    "rooms": 0,
+    "passes": 152
+   },
+   "room 14": {
+    "room": 14,
+    "crossed": [],
+    "rooms": 0,
+    "passes": 152
+   },
+   "room 15": {
+    "room": 15,
+    "crossed": [],
+    "rooms": 0,
+    "passes": 152
+   }
+  },
+  "eu room 01": {
+   "passes": 1746,
+   "end_t": 126624690,
+   "digest": "d74540d8a3fa31ad",
+   "changes": [
+    [
+     51,
+     5,
+     2,
+     2
+    ],
+    [
+     183,
+     9,
+     2,
+     2
+    ],
+    [
+     191,
+     5,
+     2,
+     2
+    ],
+    [
+     356,
+     4,
+     2,
+     2
+    ],
+    [
+     532,
+     0,
+     2,
+     2
+    ],
+    [
+     540,
+     4,
+     2,
+     2
+    ],
+    [
+     716,
+     5,
+     2,
+     2
+    ],
+    [
+     940,
+     6,
+     2,
+     2
+    ],
+    [
+     1200,
+     2,
+     2,
+     2
+    ],
+    [
+     1208,
+     6,
+     2,
+     2
+    ],
+    [
+     1442,
+     5,
+     2,
+     2
+    ],
+    [
+     1596,
+     1,
+     2,
+     2
+    ]
+   ],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 1
+  },
+  "eu room 00": {
+   "passes": 152,
+   "end_t": 12015475,
+   "digest": "79bd2f748f42c3bd",
+   "changes": [],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 0
+  },
+  "eu room 02": {
+   "passes": 152,
+   "end_t": 12016413,
+   "digest": "5f00b19d2d1e395f",
+   "changes": [],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 2
+  },
+  "eu room 03": {
+   "passes": 772,
+   "end_t": 56901787,
+   "digest": "809dcd77db685b82",
+   "changes": [
+    [
+     51,
+     7,
+     2,
+     2
+    ],
+    [
+     246,
+     11,
+     2,
+     2
+    ],
+    [
+     254,
+     7,
+     2,
+     2
+    ],
+    [
+     438,
+     3,
+     2,
+     2
+    ],
+    [
+     446,
+     7,
+     2,
+     2
+    ],
+    [
+     622,
+     6,
+     6,
+     6
+    ]
+   ],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 6
+  },
+  "eu room 04": {
+   "passes": 152,
+   "end_t": 12015473,
+   "digest": "c6c60521b8a3bbf8",
+   "changes": [],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 4
+  },
+  "eu room 05": {
+   "passes": 152,
+   "end_t": 12016121,
+   "digest": "788b4622950cbdc6",
+   "changes": [],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 5
+  },
+  "eu room 06": {
+   "passes": 152,
+   "end_t": 12016420,
+   "digest": "49f724b2d007a8c4",
+   "changes": [],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 6
+  },
+  "eu room 07": {
+   "passes": 152,
+   "end_t": 11943120,
+   "digest": "5498d57cfd0be7ef",
+   "changes": [],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 7
+  },
+  "eu room 08": {
+   "passes": 872,
+   "end_t": 63967157,
+   "digest": "eb4590f82a04826e",
+   "changes": [
+    [
+     88,
+     12,
+     2,
+     2
+    ],
+    [
+     322,
+     13,
+     2,
+     2
+    ],
+    [
+     330,
+     12,
+     2,
+     2
+    ],
+    [
+     564,
+     8,
+     2,
+     2
+    ],
+    [
+     722,
+     4,
+     6,
+     6
+    ]
+   ],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 4
+  },
+  "eu room 09": {
+   "passes": 152,
+   "end_t": 12015899,
+   "digest": "aad5863b70f7fc27",
+   "changes": [],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 9
+  },
+  "eu room 10": {
+   "passes": 752,
+   "end_t": 55331782,
+   "digest": "e86d5af9236204b9",
+   "changes": [
+    [
+     51,
+     14,
+     2,
+     2
+    ],
+    [
+     248,
+     15,
+     2,
+     2
+    ],
+    [
+     256,
+     14,
+     2,
+     2
+    ],
+    [
+     442,
+     10,
+     2,
+     2
+    ],
+    [
+     602,
+     9,
+     6,
+     6
+    ]
+   ],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 9
+  },
+  "eu room 11": {
+   "passes": 152,
+   "end_t": 11943124,
+   "digest": "d4f41f84cd90eed7",
+   "changes": [],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 11
+  },
+  "eu room 12": {
+   "passes": 152,
+   "end_t": 11943836,
+   "digest": "d0a542edc31f0d90",
+   "changes": [],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 12
+  },
+  "eu room 13": {
+   "passes": 152,
+   "end_t": 11944122,
+   "digest": "65227ddf580ef923",
+   "changes": [],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 13
+  },
+  "eu room 14": {
+   "passes": 152,
+   "end_t": 11872466,
+   "digest": "33a5ed7d37a43be0",
+   "changes": [],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 14
+  },
+  "eu room 15": {
+   "passes": 152,
+   "end_t": 11872424,
+   "digest": "da10ad0b737f60d5",
+   "changes": [],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 15
+  },
+  "eu seeds": {
+   "stack_depth": 22
+  },
+  "int room 01": {
+   "passes": 1746,
+   "end_t": 106905362,
+   "digest": "766ddb05f13f7172",
+   "changes": [
+    [
+     51,
+     5,
+     3,
+     3
+    ],
+    [
+     183,
+     9,
+     3,
+     3
+    ],
+    [
+     191,
+     5,
+     3,
+     3
+    ],
+    [
+     356,
+     4,
+     3,
+     3
+    ],
+    [
+     532,
+     0,
+     3,
+     3
+    ],
+    [
+     540,
+     4,
+     3,
+     3
+    ],
+    [
+     716,
+     5,
+     3,
+     3
+    ],
+    [
+     940,
+     6,
+     3,
+     3
+    ],
+    [
+     1200,
+     2,
+     3,
+     3
+    ],
+    [
+     1208,
+     6,
+     3,
+     3
+    ],
+    [
+     1442,
+     5,
+     3,
+     3
+    ],
+    [
+     1596,
+     1,
+     3,
+     3
+    ]
+   ],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 1
+  },
+  "int room 00": {
+   "passes": 152,
+   "end_t": 10253885,
+   "digest": "0830f48f88aa84a9",
+   "changes": [],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 0
+  },
+  "int room 02": {
+   "passes": 152,
+   "end_t": 10254823,
+   "digest": "a6e5bfdd8a49d977",
+   "changes": [],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 2
+  },
+  "int room 03": {
+   "passes": 772,
+   "end_t": 48184598,
+   "digest": "81de72acca67e391",
+   "changes": [
+    [
+     51,
+     7,
+     3,
+     3
+    ],
+    [
+     246,
+     11,
+     3,
+     3
+    ],
+    [
+     254,
+     7,
+     3,
+     3
+    ],
+    [
+     438,
+     3,
+     3,
+     3
+    ],
+    [
+     446,
+     7,
+     3,
+     3
+    ],
+    [
+     622,
+     6,
+     7,
+     7
+    ]
+   ],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 6
+  },
+  "int room 04": {
+   "passes": 152,
+   "end_t": 10253883,
+   "digest": "b7d6fc51c9cc982b",
+   "changes": [],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 4
+  },
+  "int room 05": {
+   "passes": 152,
+   "end_t": 10254531,
+   "digest": "82e0ca1cf7a3a9ce",
+   "changes": [],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 5
+  },
+  "int room 06": {
+   "passes": 152,
+   "end_t": 10254825,
+   "digest": "495df67ef4794322",
+   "changes": [],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 6
+  },
+  "int room 07": {
+   "passes": 152,
+   "end_t": 10193160,
+   "digest": "f64683a443fe5a9f",
+   "changes": [],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 7
+  },
+  "int room 08": {
+   "passes": 872,
+   "end_t": 53979325,
+   "digest": "347c7d23ea0ba0e0",
+   "changes": [
+    [
+     88,
+     12,
+     3,
+     3
+    ],
+    [
+     322,
+     13,
+     3,
+     3
+    ],
+    [
+     330,
+     12,
+     3,
+     3
+    ],
+    [
+     564,
+     8,
+     3,
+     3
+    ],
+    [
+     722,
+     4,
+     7,
+     7
+    ]
+   ],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 4
+  },
+  "int room 09": {
+   "passes": 152,
+   "end_t": 10254309,
+   "digest": "881219026fc329dd",
+   "changes": [],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 9
+  },
+  "int room 10": {
+   "passes": 752,
+   "end_t": 46810677,
+   "digest": "8b362e4a792c6566",
+   "changes": [
+    [
+     51,
+     14,
+     3,
+     3
+    ],
+    [
+     248,
+     15,
+     3,
+     3
+    ],
+    [
+     256,
+     14,
+     3,
+     3
+    ],
+    [
+     442,
+     10,
+     3,
+     3
+    ],
+    [
+     602,
+     9,
+     7,
+     7
+    ]
+   ],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 9
+  },
+  "int room 11": {
+   "passes": 152,
+   "end_t": 10193159,
+   "digest": "e8e3fd68fff9a84f",
+   "changes": [],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 11
+  },
+  "int room 12": {
+   "passes": 152,
+   "end_t": 10134136,
+   "digest": "ccc339ea7a252071",
+   "changes": [],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 12
+  },
+  "int room 13": {
+   "passes": 152,
+   "end_t": 10134422,
+   "digest": "59f193e7871ca1e4",
+   "changes": [],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 13
+  },
+  "int room 14": {
+   "passes": 152,
+   "end_t": 10134131,
+   "digest": "6386d0a7c2a2f0ac",
+   "changes": [],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 14
+  },
+  "int room 15": {
+   "passes": 152,
+   "end_t": 10134089,
+   "digest": "899959b0bad6b4e2",
+   "changes": [],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 15
+  },
+  "int seeds": {
+   "stack_depth": 22
+  }
+ },
+ "result": "FAIL",
+ "shows": {
+  "eu room 01": {
+   "zone_start": 0,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 1818,
+   "bar_ink": 8,
+   "flame_changes": 219,
+   "energies": [
+    8
+   ],
+   "joy_moves": 1078,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  "eu room 00": {
+   "zone_start": 0,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 1560,
+   "bar_ink": 8,
+   "flame_changes": 19,
+   "energies": [
+    8
+   ],
+   "joy_moves": 31,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  "eu room 02": {
+   "zone_start": 0,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 1829,
+   "bar_ink": 8,
+   "flame_changes": 19,
+   "energies": [
+    8
+   ],
+   "joy_moves": 64,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  "eu room 03": {
+   "zone_start": 2,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 57,
+   "bar_ink": 8,
+   "flame_changes": 98,
+   "energies": [
+    8
+   ],
+   "joy_moves": 312,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  "eu room 04": {
+   "zone_start": 0,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 1218,
+   "bar_ink": 8,
+   "flame_changes": 19,
+   "energies": [
+    8
+   ],
+   "joy_moves": 61,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  "eu room 05": {
+   "zone_start": 0,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 952,
+   "bar_ink": 8,
+   "flame_changes": 19,
+   "energies": [
+    8
+   ],
+   "joy_moves": 64,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  "eu room 06": {
+   "zone_start": 0,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 1027,
+   "bar_ink": 8,
+   "flame_changes": 19,
+   "energies": [
+    8
+   ],
+   "joy_moves": 26,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  "eu room 07": {
+   "zone_start": 2,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 0,
+   "bar_ink": 8,
+   "flame_changes": 19,
+   "energies": [
+    8
+   ],
+   "joy_moves": 0,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  "eu room 08": {
+   "zone_start": 1,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 0,
+   "bar_ink": 8,
+   "flame_changes": 111,
+   "energies": [
+    8
+   ],
+   "joy_moves": 393,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  "eu room 09": {
+   "zone_start": 0,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 1488,
+   "bar_ink": 8,
+   "flame_changes": 19,
+   "energies": [
+    8
+   ],
+   "joy_moves": 44,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  "eu room 10": {
+   "zone_start": 3,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 0,
+   "bar_ink": 8,
+   "flame_changes": 95,
+   "energies": [
+    8
+   ],
+   "joy_moves": 435,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  "eu room 11": {
+   "zone_start": 2,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 28,
+   "bar_ink": 8,
+   "flame_changes": 19,
+   "energies": [
+    8
+   ],
+   "joy_moves": 34,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  "eu room 12": {
+   "zone_start": 1,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 0,
+   "bar_ink": 8,
+   "flame_changes": 19,
+   "energies": [
+    8
+   ],
+   "joy_moves": 109,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  "eu room 13": {
+   "zone_start": 1,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 57,
+   "bar_ink": 8,
+   "flame_changes": 19,
+   "energies": [
+    8
+   ],
+   "joy_moves": 62,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  "eu room 14": {
+   "zone_start": 3,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 0,
+   "bar_ink": 8,
+   "flame_changes": 19,
+   "energies": [
+    8
+   ],
+   "joy_moves": 45,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  "eu room 15": {
+   "zone_start": 3,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 0,
+   "bar_ink": 8,
+   "flame_changes": 19,
+   "energies": [
+    8
+   ],
+   "joy_moves": 59,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  "int room 01": {
+   "zone_start": 0,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 1818,
+   "bar_ink": 8,
+   "flame_changes": 221,
+   "energies": [
+    8
+   ],
+   "joy_moves": 1078,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  "int room 00": {
+   "zone_start": 0,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 1560,
+   "bar_ink": 8,
+   "flame_changes": 19,
+   "energies": [
+    8
+   ],
+   "joy_moves": 31,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  "int room 02": {
+   "zone_start": 0,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 1829,
+   "bar_ink": 8,
+   "flame_changes": 19,
+   "energies": [
+    8
+   ],
+   "joy_moves": 64,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  "int room 03": {
+   "zone_start": 2,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 57,
+   "bar_ink": 8,
+   "flame_changes": 99,
+   "energies": [
+    8
+   ],
+   "joy_moves": 312,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  "int room 04": {
+   "zone_start": 0,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 1218,
+   "bar_ink": 8,
+   "flame_changes": 19,
+   "energies": [
+    8
+   ],
+   "joy_moves": 61,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  "int room 05": {
+   "zone_start": 0,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 952,
+   "bar_ink": 8,
+   "flame_changes": 19,
+   "energies": [
+    8
+   ],
+   "joy_moves": 64,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  "int room 06": {
+   "zone_start": 0,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 1027,
+   "bar_ink": 8,
+   "flame_changes": 19,
+   "energies": [
+    8
+   ],
+   "joy_moves": 26,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  "int room 07": {
+   "zone_start": 2,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 0,
+   "bar_ink": 8,
+   "flame_changes": 19,
+   "energies": [
+    8
+   ],
+   "joy_moves": 0,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  "int room 08": {
+   "zone_start": 1,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 0,
+   "bar_ink": 8,
+   "flame_changes": 110,
+   "energies": [
+    8
+   ],
+   "joy_moves": 393,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  "int room 09": {
+   "zone_start": 0,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 1488,
+   "bar_ink": 8,
+   "flame_changes": 19,
+   "energies": [
+    8
+   ],
+   "joy_moves": 44,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  "int room 10": {
+   "zone_start": 3,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 0,
+   "bar_ink": 8,
+   "flame_changes": 95,
+   "energies": [
+    8
+   ],
+   "joy_moves": 435,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  "int room 11": {
+   "zone_start": 2,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 28,
+   "bar_ink": 8,
+   "flame_changes": 19,
+   "energies": [
+    8
+   ],
+   "joy_moves": 34,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  "int room 12": {
+   "zone_start": 1,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 0,
+   "bar_ink": 8,
+   "flame_changes": 19,
+   "energies": [
+    8
+   ],
+   "joy_moves": 109,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  "int room 13": {
+   "zone_start": 1,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 57,
+   "bar_ink": 8,
+   "flame_changes": 19,
+   "energies": [
+    8
+   ],
+   "joy_moves": 62,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  "int room 14": {
+   "zone_start": 3,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 0,
+   "bar_ink": 8,
+   "flame_changes": 19,
+   "energies": [
+    8
+   ],
+   "joy_moves": 45,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  "int room 15": {
+   "zone_start": 3,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 0,
+   "bar_ink": 8,
+   "flame_changes": 19,
+   "energies": [
+    8
+   ],
+   "joy_moves": 59,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  }
+ },
+ "folder": "/home/claude/msx/N1/variants/03-dungeon/03x-too-fast",
+ "set": [],
+ "route": null,
+ "failed": 6,
+ "openmsx": "/usr/local/bin/openmsx",
+ "cbios": "/opt/openMSX/share/machines"
+}

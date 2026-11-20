@@ -1,0 +1,313 @@
+{
+ "checks": [
+  {
+   "check": "build: 04a-strong-potion/game/build/manifest.json without problems; the cartridge = its manifest's (built by the folder's tools)",
+   "pass": true,
+   "detail": "ff9635ff278c894e"
+  },
+  {
+   "check": "data: the rooms' records in the cartridge (door, objects, enemies) = the room files (with the open tiles of the doors)",
+   "pass": true,
+   "detail": "20 objects, 4 doors, 34 enemies"
+  },
+  {
+   "check": "data: the explorer's 16 sprite shapes in the VRAM after INIT = art_pieces.HERO_FRAMES, skin and clothes (msx_model.hero_colour)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "eu (50 Hz) the potion: frame_ready every pass",
+   "pass": true,
+   "detail": "323 passes"
+  },
+  {
+   "check": "eu (50 Hz) the potion: the input byte = keys + joystick",
+   "pass": true,
+   "detail": "323 passes"
+  },
+  {
+   "check": "eu (50 Hz) the potion: room and explorer = the model",
+   "pass": true,
+   "detail": "323 passes"
+  },
+  {
+   "check": "eu (50 Hz) the potion: keys, seals, score, energy, doors, end, objects",
+   "pass": true,
+   "detail": "323 passes"
+  },
+  {
+   "check": "eu (50 Hz) the potion: the sprite list in the VDP = the model",
+   "pass": true,
+   "detail": "323 passes"
+  },
+  {
+   "check": "eu (50 Hz) the potion: screen = model, every pass",
+   "pass": true,
+   "detail": "323 passes"
+  },
+  {
+   "check": "eu (50 Hz) the potion: frames = interrupts, room, zone, stack",
+   "pass": true,
+   "detail": "323 passes"
+  },
+  {
+   "check": "eu (50 Hz) the potion: VDP registers of Screen 2",
+   "pass": true,
+   "detail": "323 passes"
+  },
+  {
+   "check": "eu (50 Hz) the potion: solid map in RAM = the room with its door",
+   "pass": true,
+   "detail": "323 passes"
+  },
+  {
+   "check": "eu (50 Hz) the potion: every change hidden, else one interrupt a pass",
+   "pass": true,
+   "detail": "323 passes"
+  },
+  {
+   "check": "eu (50 Hz) the potion: nothing written to the PSG's sound registers (0-13)",
+   "pass": true,
+   "detail": "323 passes"
+  },
+  {
+   "check": "eu (50 Hz) the potion: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "eu (50 Hz) the potion: the RAM and the VRAM filled at random (two fillings, 323 passes): every pass = the model; the RAM written only in the areas of vars.asm and the stack",
+   "pass": true,
+   "detail": "stack 22 bytes"
+  },
+  {
+   "check": "eu (50 Hz) the potion: openMSX = the bench, every pass (RAM, VRAM, VDP and PSG registers, slots, T-states, the interrupts)",
+   "pass": true,
+   "detail": "323 passes, 325 interrupts"
+  },
+  {
+   "check": "eu (50 Hz) the potion: openMSX's screenshot of pass 265 = one of the bench's last pictures",
+   "pass": true,
+   "detail": "pass 265"
+  },
+  {
+   "check": "int (60 Hz) the potion: frame_ready every pass",
+   "pass": true,
+   "detail": "323 passes"
+  },
+  {
+   "check": "int (60 Hz) the potion: the input byte = keys + joystick",
+   "pass": true,
+   "detail": "323 passes"
+  },
+  {
+   "check": "int (60 Hz) the potion: room and explorer = the model",
+   "pass": true,
+   "detail": "323 passes"
+  },
+  {
+   "check": "int (60 Hz) the potion: keys, seals, score, energy, doors, end, objects",
+   "pass": true,
+   "detail": "323 passes"
+  },
+  {
+   "check": "int (60 Hz) the potion: the sprite list in the VDP = the model",
+   "pass": true,
+   "detail": "323 passes"
+  },
+  {
+   "check": "int (60 Hz) the potion: screen = model, every pass",
+   "pass": true,
+   "detail": "323 passes"
+  },
+  {
+   "check": "int (60 Hz) the potion: frames = interrupts, room, zone, stack",
+   "pass": true,
+   "detail": "323 passes"
+  },
+  {
+   "check": "int (60 Hz) the potion: VDP registers of Screen 2",
+   "pass": true,
+   "detail": "323 passes"
+  },
+  {
+   "check": "int (60 Hz) the potion: solid map in RAM = the room with its door",
+   "pass": true,
+   "detail": "323 passes"
+  },
+  {
+   "check": "int (60 Hz) the potion: every change hidden, else one interrupt a pass",
+   "pass": true,
+   "detail": "323 passes"
+  },
+  {
+   "check": "int (60 Hz) the potion: nothing written to the PSG's sound registers (0-13)",
+   "pass": true,
+   "detail": "323 passes"
+  },
+  {
+   "check": "int (60 Hz) the potion: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "int (60 Hz) the potion: the RAM and the VRAM filled at random (two fillings, 323 passes): every pass = the model; the RAM written only in the areas of vars.asm and the stack",
+   "pass": true,
+   "detail": "stack 22 bytes"
+  },
+  {
+   "check": "int (60 Hz) the potion: openMSX = the bench, every pass (RAM, VRAM, VDP and PSG registers, slots, T-states, the interrupts)",
+   "pass": true,
+   "detail": "323 passes, 327 interrupts"
+  },
+  {
+   "check": "int (60 Hz) the potion: openMSX's screenshot of pass 265 = one of the bench's last pictures",
+   "pass": true,
+   "detail": "pass 265"
+  }
+ ],
+ "facts": {
+  "step": "04-objects-doors",
+  "cartridge": "ff9635ff278c894e",
+  "data": {
+   "objects": 20,
+   "doors": 4,
+   "enemies": 34
+  },
+  "routes": {
+   "the potion": {
+    "room": 1,
+    "passes": 323
+   }
+  },
+  "eu the potion": {
+   "passes": 323,
+   "end_t": 24360321,
+   "digest": "86c6356170d943a0",
+   "changes": [
+    [
+     51,
+     5,
+     2,
+     2
+    ],
+    [
+     216,
+     4,
+     2,
+     2
+    ]
+   ],
+   "events": {
+    "object": 1
+   },
+   "game": [
+    0,
+    0,
+    0,
+    7,
+    0,
+    0
+   ],
+   "room": 4
+  },
+  "eu seeds": {
+   "stack_depth": 22
+  },
+  "int the potion": {
+   "passes": 323,
+   "end_t": 20706561,
+   "digest": "9ee48aa00bdb670c",
+   "changes": [
+    [
+     51,
+     5,
+     3,
+     3
+    ],
+    [
+     216,
+     4,
+     3,
+     3
+    ]
+   ],
+   "events": {
+    "object": 1
+   },
+   "game": [
+    0,
+    0,
+    0,
+    7,
+    0,
+    0
+   ],
+   "room": 4
+  },
+  "int seeds": {
+   "stack_depth": 22
+  }
+ },
+ "result": "PASS",
+ "shows": {
+  "eu the potion": {
+   "zone_start": 0,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 1818,
+   "bar_ink": 8,
+   "flame_changes": 40,
+   "energies": [
+    8,
+    3,
+    7
+   ],
+   "joy_moves": 132,
+   "events": {
+    "object": 1
+   },
+   "game": [
+    0,
+    0,
+    0,
+    7,
+    0,
+    0
+   ]
+  },
+  "int the potion": {
+   "zone_start": 0,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 1818,
+   "bar_ink": 8,
+   "flame_changes": 40,
+   "energies": [
+    8,
+    3,
+    7
+   ],
+   "joy_moves": 132,
+   "events": {
+    "object": 1
+   },
+   "game": [
+    0,
+    0,
+    0,
+    7,
+    0,
+    0
+   ]
+  }
+ },
+ "folder": "/home/claude/msx/N1/variants/04-objects-doors/04a-strong-potion",
+ "set": [
+  "W.POTION_ENERGY = 4"
+ ],
+ "route": "potion",
+ "failed": 0,
+ "openmsx": "/usr/local/bin/openmsx",
+ "cbios": "/opt/openMSX/share/machines"
+}

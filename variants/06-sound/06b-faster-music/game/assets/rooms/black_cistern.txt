@@ -1,0 +1,20 @@
+# Cryptmorrow ZX room 3, zone B. Symbols: see dungeon.txt.
+# Ported from the C64 map: 20 columns become 16.
+name: BLACK CISTERN
+zone: B
+object: key C 7 5
+object: potion 12 7
+enemy: skeleton 7 2 h fast
+enemy: bat 3 5
+enemy: bat 12 5
+map:
+################
+####T######t####
+##............##
+##..wwwwwwww..##
+##..wwwwwwww..##
+##..ww....ww..##
+##..wwP..Pww..##
+##............##
+##..m......m..##
+#######EE#######

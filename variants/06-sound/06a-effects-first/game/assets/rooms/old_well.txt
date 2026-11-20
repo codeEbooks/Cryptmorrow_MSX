@@ -1,0 +1,17 @@
+# Cryptmorrow ZX room 2. Symbols: see dungeon.txt.
+# Ported from the C64 map: 20 columns become 16.
+name: THE OLD WELL
+object: key A 3 2
+object: treasure 12 2
+enemy: bat 8 2
+map:
+################
+####T######t####
+##............##
+##..m......m..##
+##.....WW.....##
+##.....WW.....##
+##..P......P..##
+##..P......P..##
+##.m........m.##
+############EE##

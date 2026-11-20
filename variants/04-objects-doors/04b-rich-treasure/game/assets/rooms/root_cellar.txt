@@ -1,0 +1,18 @@
+# Cryptmorrow ZX room 4. Symbols: see dungeon.txt.
+# Ported from the C64 map: 20 columns become 16.
+# Door A to the south: the way into the ossuary.
+name: ROOT CELLAR
+door: A
+object: potion 12 2
+enemy: bat 7 5
+map:
+########EE######
+###T##r#..#r#t##
+##...#....#...##
+##...r....r...##
+##..P......P...E
+##..P......P...E
+##............##
+###..m....m..###
+##............##
+#######DD#######

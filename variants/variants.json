@@ -1,0 +1,462 @@
+{
+ "01a-faster-flames": {
+  "step": 1,
+  "kind": "variant",
+  "title": "Faster flames",
+  "folder": "variants/01-first-room/01a-faster-flames",
+  "rom": 32768,
+  "rom_sha256": "daaafc0e4fcf3614059f9827dc39662d7b96a9b869cc888537545ab6bb323fe4",
+  "pasmo_same": true,
+  "outcome": {
+   "command": "python tests/verify_step.py --step 1 --folder variants/01-first-room/01a-faster-flames --out variants/01-first-room/01a-faster-flames/evidence --no-mutations --set \"VS.FLAME_SHIFT = 2\"",
+   "result": "PASS",
+   "message": "",
+   "checks": 26,
+   "failed": 0,
+   "facts": [
+    {
+     "fact": "the flame changed about twice as often (about 100 times in 402 passes; 50 in the step)",
+     "ok": true
+    }
+   ],
+   "proved": true
+  }
+ },
+ "01x-status-not-read": {
+  "step": 1,
+  "kind": "break",
+  "title": "The VDP status not read",
+  "folder": "variants/01-first-room/01x-status-not-read",
+  "rom": 32768,
+  "rom_sha256": "7752c8e2fe62fc373f135a7781ce91ad673aba83afc6759a84c60b768423a3c3",
+  "pasmo_same": true,
+  "outcome": {
+   "command": "python tests/verify_step.py --step 1 --folder variants/01-first-room/01x-status-not-read --out variants/01-first-room/01x-status-not-read/evidence --no-mutations",
+   "result": "FAIL",
+   "message": "frame_ready every pass: the first one after INIT, for the data in the VRAM ($4097 not reached in 2854560 T-states)",
+   "checks": 27,
+   "failed": 7,
+   "proved": true
+  }
+ },
+ "01b-another-zone": {
+  "step": 1,
+  "kind": "variant",
+  "title": "The colours of another zone",
+  "folder": "variants/01-first-room/01b-another-zone",
+  "rom": 32768,
+  "rom_sha256": "09fede3d45e95735b531908bd10bbda7bac913afec0c7df29f01d7c2fa51ec45",
+  "pasmo_same": true,
+  "outcome": {
+   "command": "python tests/verify_step.py --step 1 --folder variants/01-first-room/01b-another-zone --out variants/01-first-room/01b-another-zone/evidence --no-mutations",
+   "result": "PASS",
+   "message": "",
+   "checks": 26,
+   "failed": 0,
+   "facts": [
+    {
+     "fact": "the start room in zone 3 (C), = the model of the new data",
+     "ok": true
+    }
+   ],
+   "proved": true
+  }
+ },
+ "02a-red-coat": {
+  "step": 2,
+  "kind": "variant",
+  "title": "A red coat",
+  "folder": "variants/02-explorer/02a-red-coat",
+  "rom": 32768,
+  "rom_sha256": "fb11dbf35d2c8c575d5ad9251342e0d92baf5aba5d619e2ee378d23c48ee29a6",
+  "pasmo_same": true,
+  "outcome": {
+   "command": "python tests/verify_step.py --step 2 --folder variants/02-explorer/02a-red-coat --out variants/02-explorer/02a-red-coat/evidence --no-mutations --set \"MM.HERO_CLOTHES = 6\"",
+   "result": "PASS",
+   "message": "",
+   "checks": 31,
+   "failed": 0,
+   "facts": [
+    {
+     "fact": "sprite 1 (the clothes) in colour 6, sprite 0 (the skin) in 9",
+     "ok": true
+    }
+   ],
+   "proved": true
+  }
+ },
+ "02b-joystick-port-2": {
+  "step": 2,
+  "kind": "variant",
+  "title": "The joystick in port 2",
+  "folder": "variants/02-explorer/02b-joystick-port-2",
+  "rom": 32768,
+  "rom_sha256": "397d70bcbf15b621d3498e04e72c096dbe7e80981f6e49c33d31229550e93e90",
+  "pasmo_same": true,
+  "outcome": {
+   "command": "python tests/verify_step.py --step 2 --folder variants/02-explorer/02b-joystick-port-2 --out variants/02-explorer/02b-joystick-port-2/evidence --no-mutations --set \"VS.JOY_PORT = 2\"",
+   "result": "PASS",
+   "message": "",
+   "checks": 31,
+   "failed": 0,
+   "facts": [
+    {
+     "fact": "the explorer moved with the joystick of port 2 alone (passes with the stick only)",
+     "ok": true
+    }
+   ],
+   "proved": true
+  }
+ },
+ "03a-autumn-moss": {
+  "step": 3,
+  "kind": "variant",
+  "title": "Autumn moss",
+  "folder": "variants/03-dungeon/03a-autumn-moss",
+  "rom": 32768,
+  "rom_sha256": "a8e54dd0a283e593bab37d2a4d5b062dfc2acdb9a5506532e17a1c380bbf95d4",
+  "pasmo_same": true,
+  "outcome": {
+   "command": "python tests/verify_step.py --step 3 --folder variants/03-dungeon/03a-autumn-moss --out variants/03-dungeon/03a-autumn-moss/evidence --no-mutations --set \"MM.ROWS_B['moss'] = ('ink', 12, (11, 11, 10, 10, 10, 6, 6, 6))\" --set \"MM.ROWS_B['mossface'] = ('ink', 12, (11, 11, 10, 10, 10, 6, 6, 6))\" --set \"MM.ROWS_B['fmoss'] = ('ink', 12, (11, 11, 10, 10, 10, 6, 6, 6))\"",
+   "result": "PASS",
+   "message": "",
+   "checks": 60,
+   "failed": 0,
+   "facts": [
+    {
+     "fact": "no green pixel in the room at the start (1 818 in the step: the moss)",
+     "ok": true
+    }
+   ],
+   "proved": true
+  }
+ },
+ "03b-green-bar": {
+  "step": 3,
+  "kind": "variant",
+  "title": "A green energy bar",
+  "folder": "variants/03-dungeon/03b-green-bar",
+  "rom": 32768,
+  "rom_sha256": "7f6c298a96a7e9b8c125501cdbe73aaec949ccceb68838d903fc16a81b0c9e08",
+  "pasmo_same": true,
+  "outcome": {
+   "command": "python tests/verify_step.py --step 3 --folder variants/03-dungeon/03b-green-bar --out variants/03-dungeon/03b-green-bar/evidence --no-mutations",
+   "result": "PASS",
+   "message": "",
+   "checks": 60,
+   "failed": 0,
+   "facts": [
+    {
+     "fact": "the ink of the bar's cells: medium green (2; medium red, 8, in the step)",
+     "ok": true
+    }
+   ],
+   "proved": true
+  }
+ },
+ "04a-strong-potion": {
+  "step": 4,
+  "kind": "variant",
+  "title": "A stronger potion",
+  "folder": "variants/04-objects-doors/04a-strong-potion",
+  "rom": 32768,
+  "rom_sha256": "ff9635ff278c894e0e1bee076be4320f8497ea872d082ae94c248d070179b276",
+  "pasmo_same": true,
+  "outcome": {
+   "command": "python tests/verify_step.py --step 4 --folder variants/04-objects-doors/04a-strong-potion --out variants/04-objects-doors/04a-strong-potion/evidence --no-mutations --set \"W.POTION_ENERGY = 4\" --route potion",
+   "result": "PASS",
+   "message": "",
+   "checks": 33,
+   "failed": 0,
+   "facts": [
+    {
+     "fact": "the energy 8, put at 3, then 7 after the potion",
+     "ok": true
+    }
+   ],
+   "proved": true
+  }
+ },
+ "04b-rich-treasure": {
+  "step": 4,
+  "kind": "variant",
+  "title": "Richer treasures",
+  "folder": "variants/04-objects-doors/04b-rich-treasure",
+  "rom": 32768,
+  "rom_sha256": "9ffe33eb102b5e8b62a478fa55200f7ff4bfdace0da9b6e48c74009d6f1c254f",
+  "pasmo_same": true,
+  "outcome": {
+   "command": "python tests/verify_step.py --step 4 --folder variants/04-objects-doors/04b-rich-treasure --out variants/04-objects-doors/04b-rich-treasure/evidence --no-mutations --set \"W.POINTS[W.KIND_TREASURE] = 500\"",
+   "result": "PASS",
+   "message": "",
+   "checks": 35,
+   "failed": 0,
+   "facts": [
+    {
+     "fact": "VICTORY at 7 000 points (5 000 in the step)",
+     "ok": true
+    }
+   ],
+   "proved": true
+  }
+ },
+ "05a-light-damage": {
+  "step": 5,
+  "kind": "variant",
+  "title": "Lighter damage",
+  "folder": "variants/05-combat/05a-light-damage",
+  "rom": 32768,
+  "rom_sha256": "a638adaf6d755e1282c2a7bb1f640122d872909df884dbc1af84f70f8880555a",
+  "pasmo_same": true,
+  "outcome": {
+   "command": "python tests/verify_step.py --step 5 --folder variants/05-combat/05a-light-damage --out variants/05-combat/05a-light-damage/evidence --no-mutations --set \"W.DAMAGE = 1\"",
+   "result": "PASS",
+   "message": "",
+   "checks": 68,
+   "failed": 0,
+   "facts": [
+    {
+     "fact": "GAME OVER without help after eight touches (seven, then the last)",
+     "ok": true
+    }
+   ],
+   "proved": true
+  }
+ },
+ "05b-lazy-bats": {
+  "step": 5,
+  "kind": "variant",
+  "title": "Lazy bats",
+  "folder": "variants/05-combat/05b-lazy-bats",
+  "rom": 32768,
+  "rom_sha256": "59c5f74a697a1c9003f25e3873b853aee17354235ce8c52e9ceaa14fab952d31",
+  "pasmo_same": true,
+  "outcome": {
+   "command": "python tests/verify_step.py --step 5 --folder variants/05-combat/05b-lazy-bats --out variants/05-combat/05b-lazy-bats/evidence --no-mutations --set \"W.CHASE_X, W.CHASE_Y = 48, 45\" --route bats",
+   "result": "PASS",
+   "message": "",
+   "checks": 36,
+   "failed": 0,
+   "facts": [
+    {
+     "fact": "the bat still for 150 passes with the explorer inside 96 x 90, awake at less than 48 across",
+     "ok": true
+    }
+   ],
+   "proved": true
+  }
+ },
+ "06a-effects-first": {
+  "step": 6,
+  "kind": "variant",
+  "title": "Effects only",
+  "folder": "variants/06-sound/06a-effects-first",
+  "rom": 32768,
+  "rom_sha256": "3072fd1727b7d753b3143006416901a06d3dea3adc145fb5c208a05748af76e2",
+  "pasmo_same": true,
+  "outcome": {
+   "command": "python tests/verify_step.py --step 6 --folder variants/06-sound/06a-effects-first --out variants/06-sound/06a-effects-first/evidence --no-mutations --set \"VS.SOUND_MODE = 1\"",
+   "result": "PASS",
+   "message": "",
+   "checks": 81,
+   "failed": 0,
+   "facts": [
+    {
+     "fact": "no group of the music sent to the PSG, the effects yes",
+     "ok": true
+    }
+   ],
+   "proved": true
+  }
+ },
+ "06b-faster-music": {
+  "step": 6,
+  "kind": "variant",
+  "title": "Faster music",
+  "folder": "variants/06-sound/06b-faster-music",
+  "rom": 32768,
+  "rom_sha256": "8dc6e2b1f36900acb9afa11a18063da4e127fb7d73543b0e0e0c1fbdbfb79e44",
+  "pasmo_same": true,
+  "outcome": {
+   "command": "python tests/verify_step.py --step 6 --folder variants/06-sound/06b-faster-music --out variants/06-sound/06b-faster-music/evidence --no-mutations",
+   "result": "PASS",
+   "message": "",
+   "checks": 81,
+   "failed": 0,
+   "facts": [
+    {
+     "fact": "the PSG = the model at 5 frames a step (6 at 60 Hz)",
+     "ok": true
+    }
+   ],
+   "proved": true
+  }
+ },
+ "02x-small-sprites": {
+  "step": 2,
+  "kind": "break",
+  "title": "8 x 8 sprites",
+  "folder": "variants/02-explorer/02x-small-sprites",
+  "rom": 32768,
+  "rom_sha256": "ee0cb0858165b06465b6ef2dc605e35e598c6eaa0b8dd401b75d6c956ef98ef7",
+  "pasmo_same": true,
+  "outcome": {
+   "command": "python tests/verify_step.py --step 2 --folder variants/02-explorer/02x-small-sprites --out variants/02-explorer/02x-small-sprites/evidence --no-mutations",
+   "result": "FAIL",
+   "message": "eu (50 Hz) Moss Gate: screen = model, every pass (pass 1 (room 1): pixel (128, 104) colour 1, model 10)",
+   "checks": 31,
+   "failed": 6,
+   "proved": true,
+   "picture": "step02_eu_Moss_Gate_00164_far_north.png"
+  }
+ },
+ "03x-too-fast": {
+  "step": 3,
+  "kind": "break",
+  "title": "Faster than the VDP",
+  "folder": "variants/03-dungeon/03x-too-fast",
+  "rom": 32768,
+  "rom_sha256": "c9267493072be67938555f72a4ef4746232d00f2b50635a156815a06635d3756",
+  "pasmo_same": true,
+  "outcome": {
+   "command": "python tests/verify_step.py --step 3 --folder variants/03-dungeon/03x-too-fast --out variants/03-dungeon/03x-too-fast/evidence --no-mutations",
+   "result": "FAIL",
+   "message": "int (60 Hz) room 01: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM ({'29T': [(4412021, 17088, 23), (4412044, 17088, 23)], 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None})",
+   "checks": 60,
+   "failed": 6,
+   "proved": true
+  }
+ },
+ "04x-key-stays": {
+  "step": 4,
+  "kind": "break",
+  "title": "The key that stays",
+  "folder": "variants/04-objects-doors/04x-key-stays",
+  "rom": 32768,
+  "rom_sha256": "ed2b0800cdb7d0871052700ab373c2732bd00e529ddb125e6b95171f37aa5bf0",
+  "pasmo_same": true,
+  "outcome": {
+   "command": "python tests/verify_step.py --step 4 --folder variants/04-objects-doors/04x-key-stays --out variants/04-objects-doors/04x-key-stays/evidence --no-mutations",
+   "result": "FAIL",
+   "message": "eu (50 Hz) the walking game: keys, seals, score, energy, doors, end, objects (pass 3147: (1, 0, 750, 8, 1, 0), model (0, 0, 750, 8, 1, 0))",
+   "checks": 35,
+   "failed": 4,
+   "proved": true
+  }
+ },
+ "05x-hidden-at-208": {
+  "step": 5,
+  "kind": "break",
+  "title": "Hidden at Y = 208",
+  "folder": "variants/05-combat/05x-hidden-at-208",
+  "rom": 32768,
+  "rom_sha256": "e850bd942adad41275782aa71ae2ed6e3723168cf9545a519f6ccff7cbb375d8",
+  "pasmo_same": true,
+  "outcome": {
+   "command": "python tests/verify_step.py --step 5 --folder variants/05-combat/05x-hidden-at-208 --out variants/05-combat/05x-hidden-at-208/evidence --no-mutations",
+   "result": "FAIL",
+   "message": "eu (50 Hz) the whole game: blow, damage, enemies, sprite list = the model (pass 11310: (46, 0, 0, 0, 30, 1, 0, 2, 1, 160, 76, 0, 3, 0, 0, 0, 2, 2, 145, 87, 3, 1, 0, 0, 0, 0, 0, 0, 16, 3, 0, 0, 0, 0, 0, 75, 160, 68, 15, 86, 145, 76, 13), model (46, 0, 0, 0, 30, 0, 0, 2, 1, 160, 76, 0, 3, 0, 0, 0, 2, 2, 145, 87, 3, 1, 0, 0, 0, 0, 0, 0, 16, 3, 0, 0, 0, 0, 0, 75, 160, 68, 15, 86, 145, 76, 13))",
+   "checks": 68,
+   "failed": 12,
+   "proved": true
+  }
+ },
+ "06x-port-a-out": {
+  "step": 6,
+  "kind": "break",
+  "title": "Port A as an output",
+  "folder": "variants/06-sound/06x-port-a-out",
+  "rom": 32768,
+  "rom_sha256": "686c209bbd7b4565ed07920e52dac2c4933e875e4b19be98e8677bdf56b388d0",
+  "pasmo_same": true,
+  "outcome": {
+   "command": "python tests/verify_step.py --step 6 --folder variants/06-sound/06x-port-a-out --out variants/06-sound/06x-port-a-out/evidence --no-mutations",
+   "result": "FAIL",
+   "message": "eu (50 Hz) the whole game: every group of registers sent to the PSG = the model (psg_model), the other writes as they must be (pass 1: group 0 of 3 (model 3): [0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0], model [0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0] (now))",
+   "checks": 81,
+   "failed": 14,
+   "proved": true
+  }
+ },
+ "08x-no-enaslt": {
+  "step": 8,
+  "kind": "break",
+  "title": "ENASLT forgotten",
+  "folder": "variants/08-complete/08x-no-enaslt",
+  "rom": 32768,
+  "rom_sha256": "e0e68ae90066c8dfe3be1c80c7240f2faf905d8b94c481cec7311c8799b80d2b",
+  "pasmo_same": true,
+  "outcome": {
+   "command": "python tests/verify_1_0.py --step 8 --folder variants/08-complete/08x-no-enaslt --out variants/08-complete/08x-no-enaslt/evidence --only data,sound,palettes,game,defeat,shots,rooms,alone,sessions,players,systems",
+   "result": "FAIL",
+   "message": "data: the program reached every pass ($413D not reached in 2854560 T-states)",
+   "checks": 275,
+   "failed": 52,
+   "proved": true
+  }
+ },
+ "07a-ice-crypt": {
+  "step": 7,
+  "kind": "variant",
+  "title": "Another name in the logo",
+  "folder": "variants/07-title-and-ends/07a-ice-crypt",
+  "rom": 32768,
+  "rom_sha256": "7872bf79fad64ae1057578ba86e296dd638cb67f115e8b2906803613779b5513",
+  "pasmo_same": true,
+  "outcome": {
+   "command": "python tests/verify_1_0.py --step 7 --folder variants/07-title-and-ends/07a-ice-crypt --out variants/07-title-and-ends/07a-ice-crypt/evidence --only data,sound,palettes,game,defeat,shots,rooms,alone,sessions,players,systems",
+   "result": "PASS",
+   "message": "",
+   "checks": 590,
+   "failed": 0,
+   "facts": [
+    {
+     "fact": "every title of the sessions = the model of the new title",
+     "ok": true
+    }
+   ],
+   "proved": true
+  }
+ },
+ "07b-short-wait": {
+  "step": 7,
+  "kind": "variant",
+  "title": "A shorter wait on the end screen",
+  "folder": "variants/07-title-and-ends/07b-short-wait",
+  "rom": 32768,
+  "rom_sha256": "c4d01c2f8cd7047bdd5b77024444840973b4a2ebd316e671594ed2af3a2985f6",
+  "pasmo_same": true,
+  "outcome": {
+   "command": "python tests/verify_1_0.py --step 7 --folder variants/07-title-and-ends/07b-short-wait --out variants/07-title-and-ends/07b-short-wait/evidence --only data,sound,palettes,game,defeat,shots,rooms,alone,sessions,players,systems --set \"import sessions_0_8; sessions_0_8.V_DELAY = 50\" --set \"V.END_DELAY = 50\"",
+   "result": "PASS",
+   "message": "",
+   "checks": 590,
+   "failed": 0,
+   "facts": [
+    {
+     "fact": "every end screen of the sessions = the model of the states with 50 passes",
+     "ok": true
+    }
+   ],
+   "proved": true
+  }
+ },
+ "07x-address-split": {
+  "step": 7,
+  "kind": "break",
+  "title": "An address split by the interrupt",
+  "folder": "variants/07-title-and-ends/07x-address-split",
+  "rom": 32768,
+  "rom_sha256": "507a616b8faacccadac9c58ee9f5f01bdfe95e62bf7e678b49cf236b0dbcff25",
+  "pasmo_same": true,
+  "outcome": {
+   "command": "python tests/verify_1_0.py --step 7 --folder variants/07-title-and-ends/07x-address-split --out variants/07-title-and-ends/07x-address-split/evidence --only data,sound,palettes,game,defeat,shots,rooms,alone,sessions,players,systems",
+   "result": "FAIL",
+   "message": "eu (50 Hz): the theme in the bench, 3192 passes standing in the Moss Gate: every pass = the model (explorer, screen, sounds asked, PSG), the rules ({'ctrl': ['$41CC at T 772934']})",
+   "checks": 590,
+   "failed": 59,
+   "proved": true,
+   "picture": "short_title_again_60hz.png"
+  }
+ }
+}

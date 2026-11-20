@@ -1,0 +1,16 @@
+# Written by the builds and the tests. The reference cartridges are in
+# reference/ and releases/; the reports of the variants' tests are kept
+# in their folders' evidence/. Of the folders build/ the repository
+# keeps only the two states of C-BIOS that the tests start from and
+# the probe of fase0/.
+**/build/*
+!/game/build/state_eu.json
+!/game/build/state_int.json
+!/fase0/build/probe.rom
+!/fase0/build/probe.sym
+__pycache__/
+*.py[cod]
+*.log
+/chain/evidence-workspace/
+/editorial/
+/reports/

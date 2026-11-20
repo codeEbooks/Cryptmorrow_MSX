@@ -1,0 +1,21 @@
+# Cryptmorrow ZX room 11, zone B. Symbols: see dungeon.txt.
+# Ported from the C64 map: 20 columns become 16.
+# The second seal lies before the altar.
+name: DROWNED SHRINE
+zone: B
+object: seal 8 4
+object: treasure 3 5
+enemy: skeleton 8 7 h fast
+enemy: bat 4 2
+enemy: bat 11 5
+map:
+#######EE#######
+####T##..##t####
+##............##
+##.ww..AAA..ww##
+##.ww.......ww##
+##...P....P...##
+##...P....P...##
+##.ww.......ww##
+##.ww...m...ww##
+################

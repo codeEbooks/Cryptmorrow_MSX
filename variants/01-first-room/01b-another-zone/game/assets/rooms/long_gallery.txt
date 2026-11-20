@@ -1,0 +1,19 @@
+# Cryptmorrow ZX room 6. Symbols: see dungeon.txt.
+# Ported from the C64 map: 20 columns become 16.
+# Door B to the east: the way into the water zone.
+name: LONG GALLERY
+door: B
+object: treasure 13 8
+enemy: skeleton 6 4 h fast
+enemy: skeleton 9 8 h fast
+map:
+############EE##
+###T#t##T##t..##
+##..P..P..P...##
+##..P..P..P...##
+E..............D
+E..............D
+##..P..P..P...##
+##..P..P..P...##
+##..m......m..##
+################

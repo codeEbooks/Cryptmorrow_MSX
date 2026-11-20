@@ -1,0 +1,19 @@
+# Cryptmorrow ZX room 7, zone B. Symbols: see dungeon.txt.
+# Ported from the C64 map: 20 columns become 16.
+# Door B of the long gallery opens on its west side.
+name: FLOODED STAIR
+zone: B
+object: potion 12 2
+enemy: skeleton 10 6 v fast
+enemy: bat 12 5
+map:
+#######EE#######
+####T##..##t####
+##ww..........##
+##ww..wwww....##
+E.....wwww....##
+E.............##
+##...wwww.....##
+##...wwww..w..##
+##.........w..##
+#######EE#######

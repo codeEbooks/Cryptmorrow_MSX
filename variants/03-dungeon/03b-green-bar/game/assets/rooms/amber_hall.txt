@@ -1,0 +1,20 @@
+# Cryptmorrow ZX room 10, zone C. Symbols: see dungeon.txt.
+# Ported from the C64 map: 20 columns become 16.
+# Door C of the sunken hall opens on its west side.
+name: AMBER HALL
+zone: C
+object: potion 12 2
+enemy: skeleton 7 3 h fast
+enemy: skeleton 6 7 h fast
+enemy: bat 11 5
+map:
+################
+####T##tT##t####
+##............##
+##..u......u..##
+##...P....P...##
+E....P....P...##
+E.............##
+##..u......u..##
+##.g........g.##
+#######EE#######

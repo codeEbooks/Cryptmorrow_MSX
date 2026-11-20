@@ -1,0 +1,386 @@
+{
+ "steps": {
+  "01-first-room": {
+   "folder": "chain/01-first-room",
+   "files": [
+    "cryptmorrow.asm",
+    "hud.asm",
+    "interrupt.asm",
+    "main.asm",
+    "msx.asm",
+    "room.asm",
+    "start.asm",
+    "torches.asm",
+    "vars.asm",
+    "vdp.asm",
+    "zone.asm"
+   ],
+   "lines": 765,
+   "instructions": 497,
+   "rom": 32768,
+   "rom_sha256": "1f33844596f28e36b84e5a2b0dbb6123686abe6a33cbdee590be353a1487bf8c",
+   "roms": {
+    "cryptmorrow": "1f33844596f28e36b84e5a2b0dbb6123686abe6a33cbdee590be353a1487bf8c"
+   },
+   "pasmo_same": true,
+   "measures": {
+    "code": 860,
+    "data": 19124,
+    "free": 12784,
+    "data_parts": {
+     "gradients": 40,
+     "flames": 64,
+     "glyphs": 542,
+     "zones": 15343,
+     "rooms": 3135
+    }
+   }
+  },
+  "02-explorer": {
+   "folder": "chain/02-explorer",
+   "files": [
+    "combat.asm",
+    "cryptmorrow.asm",
+    "hero.asm",
+    "hud.asm",
+    "input.asm",
+    "interrupt.asm",
+    "main.asm",
+    "msx.asm",
+    "room.asm",
+    "start.asm",
+    "torches.asm",
+    "vars.asm",
+    "vdp.asm",
+    "zone.asm"
+   ],
+   "lines": 1130,
+   "instructions": 729,
+   "rom": 32768,
+   "rom_sha256": "bd3456a5b09c5d3271470da545a24c78cf3c51726e244468d4a05c71186c75bd",
+   "roms": {
+    "cryptmorrow": "bd3456a5b09c5d3271470da545a24c78cf3c51726e244468d4a05c71186c75bd"
+   },
+   "pasmo_same": true,
+   "measures": {
+    "code": 1311,
+    "data": 19636,
+    "free": 11821,
+    "data_parts": {
+     "gradients": 40,
+     "flames": 64,
+     "glyphs": 542,
+     "zones": 15343,
+     "shapes": 512,
+     "rooms": 3135
+    }
+   }
+  },
+  "03-dungeon": {
+   "folder": "chain/03-dungeon",
+   "files": [
+    "combat.asm",
+    "cryptmorrow.asm",
+    "hero.asm",
+    "hud.asm",
+    "input.asm",
+    "interrupt.asm",
+    "main.asm",
+    "msx.asm",
+    "room.asm",
+    "start.asm",
+    "torches.asm",
+    "vars.asm",
+    "vdp.asm",
+    "world.asm",
+    "zone.asm"
+   ],
+   "lines": 1356,
+   "instructions": 859,
+   "rom": 32768,
+   "rom_sha256": "eed3d3f53feece189c7ba77ca5139f7bec88815b6f9abcb09e58019f1567809b",
+   "roms": {
+    "cryptmorrow": "eed3d3f53feece189c7ba77ca5139f7bec88815b6f9abcb09e58019f1567809b"
+   },
+   "pasmo_same": true,
+   "measures": {
+    "code": 1615,
+    "data": 19636,
+    "free": 11517,
+    "data_parts": {
+     "gradients": 40,
+     "flames": 64,
+     "glyphs": 542,
+     "zones": 15343,
+     "shapes": 512,
+     "rooms": 3135
+    }
+   }
+  },
+  "04-objects-doors": {
+   "folder": "chain/04-objects-doors",
+   "files": [
+    "combat.asm",
+    "cryptmorrow.asm",
+    "hero.asm",
+    "hud.asm",
+    "input.asm",
+    "interrupt.asm",
+    "main.asm",
+    "msx.asm",
+    "objects.asm",
+    "room.asm",
+    "start.asm",
+    "torches.asm",
+    "vars.asm",
+    "vdp.asm",
+    "world.asm",
+    "zone.asm"
+   ],
+   "lines": 1866,
+   "instructions": 1223,
+   "rom": 32768,
+   "rom_sha256": "4539d0015ed5e134b6772f5a3ac0d7d7b3933c1be178971700662a54d106a8c5",
+   "roms": {
+    "cryptmorrow": "4539d0015ed5e134b6772f5a3ac0d7d7b3933c1be178971700662a54d106a8c5"
+   },
+   "pasmo_same": true,
+   "measures": {
+    "code": 2245,
+    "data": 19696,
+    "free": 10827,
+    "data_parts": {
+     "gradients": 40,
+     "flames": 64,
+     "glyphs": 542,
+     "zones": 15343,
+     "shapes": 512,
+     "rooms": 3135,
+     "doors": 60
+    }
+   }
+  },
+  "05-combat": {
+   "folder": "chain/05-combat",
+   "files": [
+    "combat.asm",
+    "cryptmorrow.asm",
+    "hero.asm",
+    "hud.asm",
+    "input.asm",
+    "interrupt.asm",
+    "main.asm",
+    "msx.asm",
+    "objects.asm",
+    "room.asm",
+    "start.asm",
+    "torches.asm",
+    "vars.asm",
+    "vdp.asm",
+    "world.asm",
+    "zone.asm"
+   ],
+   "lines": 2603,
+   "instructions": 1734,
+   "rom": 32768,
+   "rom_sha256": "1a4338e461e4bcbe2405178bee56ce7964de39d965186c5aec81cb211ed16553",
+   "roms": {
+    "cryptmorrow": "1a4338e461e4bcbe2405178bee56ce7964de39d965186c5aec81cb211ed16553"
+   },
+   "pasmo_same": true,
+   "measures": {
+    "code": 3328,
+    "data": 19984,
+    "free": 9456,
+    "data_parts": {
+     "gradients": 40,
+     "flames": 64,
+     "glyphs": 542,
+     "zones": 15343,
+     "shapes": 800,
+     "rooms": 3135,
+     "doors": 60
+    }
+   }
+  },
+  "06-sound": {
+   "folder": "chain/06-sound",
+   "files": [
+    "combat.asm",
+    "cryptmorrow.asm",
+    "hero.asm",
+    "hud.asm",
+    "input.asm",
+    "interrupt.asm",
+    "main.asm",
+    "msx.asm",
+    "objects.asm",
+    "player.asm",
+    "room.asm",
+    "start.asm",
+    "torches.asm",
+    "vars.asm",
+    "vdp.asm",
+    "world.asm",
+    "zone.asm"
+   ],
+   "lines": 3367,
+   "instructions": 2237,
+   "rom": 32768,
+   "rom_sha256": "5b61f06f3420d9ce7a9c2430960bb89cb69898118f3c22e899e06aa89e8cce5e",
+   "roms": {
+    "cryptmorrow": "5b61f06f3420d9ce7a9c2430960bb89cb69898118f3c22e899e06aa89e8cce5e"
+   },
+   "pasmo_same": true,
+   "measures": {
+    "code": 4325,
+    "data": 21499,
+    "free": 6944,
+    "data_parts": {
+     "gradients": 40,
+     "flames": 64,
+     "glyphs": 542,
+     "zones": 15343,
+     "shapes": 800,
+     "rooms": 3135,
+     "doors": 60,
+     "music": 1515
+    }
+   }
+  },
+  "07-title-and-ends": {
+   "folder": "chain/07-title-and-ends",
+   "files": [
+    "combat.asm",
+    "cryptmorrow.asm",
+    "hero.asm",
+    "hud.asm",
+    "input.asm",
+    "interrupt.asm",
+    "main.asm",
+    "msx.asm",
+    "objects.asm",
+    "player.asm",
+    "room.asm",
+    "screens.asm",
+    "start.asm",
+    "torches.asm",
+    "vars.asm",
+    "vdp.asm",
+    "world.asm",
+    "zone.asm"
+   ],
+   "lines": 4608,
+   "instructions": 3117,
+   "rom": 32768,
+   "rom_sha256": "fbd460f7202b102e477460f8711ca48c7fa5bf9d205013c3d47387b301dea244",
+   "roms": {
+    "cryptmorrow": "fbd460f7202b102e477460f8711ca48c7fa5bf9d205013c3d47387b301dea244",
+    "cryptmorrow_play": "122c3b15245122482c11a57ff3cf9821b022ccd5322cf99abc430cf83a12dcf8",
+    "cryptmorrow_play_fx": "e36684de621de622dffb2bb1278053b2fdaeac07319ab5da93f89656aa4bc019",
+    "cryptmorrow_play_silent": "da6e2d92aaa6e22d1d2fc383846573632a07d366e188f243da0178e45123e80d",
+    "rooms/00": "ad310a350442c2508ec1ede72c75715a4dd0f39c1fef3867245bf4ccfbb8534e",
+    "rooms/01": "122c3b15245122482c11a57ff3cf9821b022ccd5322cf99abc430cf83a12dcf8",
+    "rooms/02": "76e13739fafd918560aea524b770b4adf91a1ccdc683d4e9922ffc86c6ec010d",
+    "rooms/03": "093cc15a97089362cd799ea0921a00a98a2997a43692d0250600caf9bb3edec8",
+    "rooms/04": "61c35fd6d9dc36004ff66affdf623d8f983b82799fbaa52994f5f76aecf6715b",
+    "rooms/05": "6dd762fc64103b082b246599d1dc7ce009adcc0f2b255ec01982aa48e6c987be",
+    "rooms/06": "00a56eccdb7d6bb669b455772adb8acfb5f74e15e813a52e613a50cb1510304e",
+    "rooms/07": "69ed238f8c914636169ee460265db1b1169fd13a3b57ae50e16259f516789295",
+    "rooms/08": "c9875113aa9d3c5a92096c66eae9d64764ab8111f415aba37aa381c856c4c8a4",
+    "rooms/09": "ffbabbe5237a942ccb096c5284c0c8f52da47a7f509fec4c91b105906ad98969",
+    "rooms/10": "3c22aa9e7f2ed0202430753d5c55349b6b5fbbb1f9d447c2de0b7e1109c2de09",
+    "rooms/11": "df8e743cc9e334efeeabf96e690b25765cb06a1d42681977e7dd390fa58044d6",
+    "rooms/12": "40a162b3fb83de8879f83b722d3e09b2266caa65cd4da5192dc213bc296c6e14",
+    "rooms/13": "8b409a646daed26ee195e73f068f455e185f09a2b7a1557ec8ec3efb0c151c14",
+    "rooms/14": "8582688dc980f9b0e03fa0b5b79da68cb176bab18007ee2611759b02dfc0ed1c",
+    "rooms/15": "e83c06fb8c2fddb33cd4646711891256bcdc07af714a597117ccac009ae15b2d"
+   },
+   "pasmo_same": true,
+   "measures": {
+    "code": 6016,
+    "data": 22630,
+    "free": 4122,
+    "data_parts": {
+     "gradients": 40,
+     "flames": 64,
+     "glyphs": 542,
+     "zones": 15343,
+     "shapes": 800,
+     "rooms": 3135,
+     "screens": 1131,
+     "doors": 60,
+     "music": 1515
+    }
+   }
+  },
+  "08-complete": {
+   "folder": "chain/08-complete",
+   "files": [
+    "combat.asm",
+    "cryptmorrow.asm",
+    "hero.asm",
+    "hud.asm",
+    "input.asm",
+    "interrupt.asm",
+    "main.asm",
+    "msx.asm",
+    "objects.asm",
+    "player.asm",
+    "room.asm",
+    "screens.asm",
+    "start.asm",
+    "torches.asm",
+    "vars.asm",
+    "vdp.asm",
+    "world.asm",
+    "zone.asm"
+   ],
+   "lines": 4679,
+   "instructions": 3159,
+   "rom": 32768,
+   "rom_sha256": "ee48662a9c40c039c26017d55ad8dc14786c1d8bcf3842d1831025b8d5f6adbd",
+   "roms": {
+    "cryptmorrow": "ee48662a9c40c039c26017d55ad8dc14786c1d8bcf3842d1831025b8d5f6adbd",
+    "cryptmorrow_play": "19f5a1d19cb1b76709dd4fe2e2146fb9c9ad836776339220b4835e1b3b95ca36",
+    "cryptmorrow_play_fx": "ab104695ae6376ce526f2cd8ad6ec07cc3c583283620a0302dba961d5bf6358c",
+    "cryptmorrow_play_silent": "2e8a825d034c72b8b2e05715dde005b080b5a48869f5cf4b818f1686b388120b",
+    "rooms/00": "e7c54a40326500a16a0f57d4ba722831aea1ed4b23f52a39f41ed534c67595a0",
+    "rooms/01": "19f5a1d19cb1b76709dd4fe2e2146fb9c9ad836776339220b4835e1b3b95ca36",
+    "rooms/02": "7a6e42b4c5cd5677ef350c5bd09f9282a0a3e7bc09348ded843c467f85a29294",
+    "rooms/03": "85bf1c956260e8e36a8d228aae29ec7462aa11fa7b0fccb04e5fee75eb49e3e3",
+    "rooms/04": "217d7b1325c0c9d592f25064202b32f17b6f160c1a2800ef593d259a90e6829d",
+    "rooms/05": "4c955cf120eed47b70762f66806dd46558e714d57070baacc6bd286f7cf053da",
+    "rooms/06": "57e9f20835428861f1544f423798749d8fbc87408375373211a3ddbca364e0ca",
+    "rooms/07": "8a8446974e52df077318ab5015ba1fbe58f3ff499921a550deb0d229a130829f",
+    "rooms/08": "b22a03ad84eb47cb898748b96f4c37f90bbc7106188248e5d88a5f0b44224c49",
+    "rooms/09": "601885ec619dae0cf38b82821021e22cb903907475f6b2fd038340a618041ffe",
+    "rooms/10": "97f784b06ff4e18d048d6577d25b2587fce75c6be989afd04fc3016de9e1bc80",
+    "rooms/11": "144d6da042bf385014cb743bfc908cfdf9653a6d57abab148cc404e63123df9c",
+    "rooms/12": "7bf8c9cff4f9ce9f18ba0c31ee41e2f1cf0b0063ce15bec749815c00348341d0",
+    "rooms/13": "e09e6551887102542e837b7e38b4ce8fc428eb94da64e345f2363be6898598b5",
+    "rooms/14": "7ddd6d7ce39878384f1f73d415f6bc29fd59004bbcec77d25276eb3a4fbe8c51",
+    "rooms/15": "ca92724f820b4d10b4e13884e17cab0eca454d5b09bb1cfec964819010420564"
+   },
+   "pasmo_same": true,
+   "measures": {
+    "code": 6120,
+    "data": 26209,
+    "free": 439,
+    "data_parts": {
+     "gradients": 40,
+     "flames": 64,
+     "glyphs": 542,
+     "zones": 15343,
+     "shapes": 800,
+     "rooms": 3135,
+     "screens": 1131,
+     "opening": 3579,
+     "doors": 60,
+     "music": 1515
+    }
+   }
+  }
+ },
+ "problems": []
+}

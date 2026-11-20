@@ -1,0 +1,1764 @@
+{
+ "checks": [
+  {
+   "check": "build: 05x-hidden-at-208/game/build/manifest.json without problems; the cartridge = its manifest's (built by the folder's tools)",
+   "pass": true,
+   "detail": "e850bd942adad412"
+  },
+  {
+   "check": "data: the rooms' records in the cartridge (door, objects, enemies) = the room files (with the open tiles of the doors)",
+   "pass": true,
+   "detail": "20 objects, 4 doors, 34 enemies"
+  },
+  {
+   "check": "data: the explorer's 16 sprite shapes in the VRAM after INIT = art_pieces.HERO_FRAMES, skin and clothes (msx_model.hero_colour)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "data: the nine images of the combat in the VRAM after INIT = art_pieces.COMBAT_FRAMES, their colours = msx_model.COMBAT_INKS",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "eu (50 Hz) the whole game: frame_ready every pass",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: the input byte = keys + joystick (0 while the blade is out)",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: room and explorer = the model",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: keys, seals, score, energy, doors, end, objects",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: blow, damage, enemies, sprite list = the model",
+   "pass": false,
+   "detail": "pass 11310: (46, 0, 0, 0, 30, 1, 0, 2, 1, 160, 76, 0, 3, 0, 0, 0, 2, 2, 145, 87, 3, 1, 0, 0, 0, 0, 0, 0, 16, 3, 0, 0, 0, 0, 0, 75, 160, 68, 15, 86, 145, 76, 13), model (46, 0, 0, 0, 30, 0, 0, 2, 1, 160, 76, 0, 3, 0, 0, 0, 2, 2, 145, 87, 3, 1, 0, 0, 0, 0, 0, 0, 16, 3, 0, 0, 0, 0, 0, 75, 160, 68, 15, 86, 145, 76, 13)"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: the sprite list in the VDP = the model",
+   "pass": false,
+   "detail": "pass 11311: [], model [(75, 160, 68, 15), (86, 145, 76, 13)]"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: screen = model, every pass",
+   "pass": false,
+   "detail": "pass 11311 (room 7): pixel (165, 76) colour 1, model 15"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: frames = interrupts, room, zone, stack",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: VDP registers of Screen 2",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: solid map in RAM = the room with its door",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: every change hidden, else one interrupt a pass",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: nothing written to the PSG's sound registers (0-13)",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: VICTORY at pass 19504, then 349 passes of input with the room still",
+   "pass": true,
+   "detail": "blow 59, defeat 68, door 4, end 1, hit 113, object 16, touch 3"
+  },
+  {
+   "check": "eu (50 Hz) defeat: frame_ready every pass",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "eu (50 Hz) defeat: the input byte = keys + joystick (0 while the blade is out)",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "eu (50 Hz) defeat: room and explorer = the model",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "eu (50 Hz) defeat: keys, seals, score, energy, doors, end, objects",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "eu (50 Hz) defeat: blow, damage, enemies, sprite list = the model",
+   "pass": false,
+   "detail": "pass 138: (138, 0, 0, 0, 30, 1, 0, 1, 1, 127, 112, 2, 3, 0, 0, 0, 2, 0, 0, 16, 3, 0, 0, 0, 0, 0, 0, 0, 16, 3, 0, 0, 0, 0, 0, 111, 127, 68, 15), model (138, 0, 0, 0, 30, 0, 0, 1, 1, 127, 112, 2, 3, 0, 0, 0, 2, 0, 0, 16, 3, 0, 0, 0, 0, 0, 0, 0, 16, 3, 0, 0, 0, 0, 0, 111, 127, 68, 15)"
+  },
+  {
+   "check": "eu (50 Hz) defeat: the sprite list in the VDP = the model",
+   "pass": false,
+   "detail": "pass 139: [], model [(111, 127, 68, 15)]"
+  },
+  {
+   "check": "eu (50 Hz) defeat: screen = model, every pass",
+   "pass": false,
+   "detail": "pass 139 (room 5): pixel (132, 112) colour 14, model 15"
+  },
+  {
+   "check": "eu (50 Hz) defeat: frames = interrupts, room, zone, stack",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "eu (50 Hz) defeat: VDP registers of Screen 2",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "eu (50 Hz) defeat: solid map in RAM = the room with its door",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "eu (50 Hz) defeat: every change hidden, else one interrupt a pass",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "eu (50 Hz) defeat: nothing written to the PSG's sound registers (0-13)",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "eu (50 Hz) defeat: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "eu (50 Hz) defeat: GAME OVER without help at pass 399 (the model: 399), then the room still",
+   "pass": true,
+   "detail": "touches 3"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: the RAM and the VRAM filled at random (two fillings, 500 passes): every pass = the model; the RAM written only in the areas of vars.asm and the stack",
+   "pass": true,
+   "detail": "stack 22 bytes"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: openMSX = the bench, every pass (RAM, VRAM, VDP and PSG registers, slots, T-states, the interrupts)",
+   "pass": true,
+   "detail": "19853 passes, 19908 interrupts"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: openMSX's screenshot of pass 64 = one of the bench's last pictures",
+   "pass": true,
+   "detail": "pass 64"
+  },
+  {
+   "check": "eu (50 Hz) defeat: openMSX = the bench, every pass (RAM, VRAM, VDP and PSG registers, slots, T-states, the interrupts)",
+   "pass": true,
+   "detail": "748 passes, 749 interrupts"
+  },
+  {
+   "check": "int (60 Hz) the whole game: frame_ready every pass",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "int (60 Hz) the whole game: the input byte = keys + joystick (0 while the blade is out)",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "int (60 Hz) the whole game: room and explorer = the model",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "int (60 Hz) the whole game: keys, seals, score, energy, doors, end, objects",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "int (60 Hz) the whole game: blow, damage, enemies, sprite list = the model",
+   "pass": false,
+   "detail": "pass 11310: (46, 0, 0, 0, 30, 1, 0, 2, 1, 160, 76, 0, 3, 0, 0, 0, 2, 2, 145, 87, 3, 1, 0, 0, 0, 0, 0, 0, 16, 3, 0, 0, 0, 0, 0, 75, 160, 68, 15, 86, 145, 76, 13), model (46, 0, 0, 0, 30, 0, 0, 2, 1, 160, 76, 0, 3, 0, 0, 0, 2, 2, 145, 87, 3, 1, 0, 0, 0, 0, 0, 0, 16, 3, 0, 0, 0, 0, 0, 75, 160, 68, 15, 86, 145, 76, 13)"
+  },
+  {
+   "check": "int (60 Hz) the whole game: the sprite list in the VDP = the model",
+   "pass": false,
+   "detail": "pass 11311: [], model [(75, 160, 68, 15), (86, 145, 76, 13)]"
+  },
+  {
+   "check": "int (60 Hz) the whole game: screen = model, every pass",
+   "pass": false,
+   "detail": "pass 11311 (room 7): pixel (165, 76) colour 1, model 15"
+  },
+  {
+   "check": "int (60 Hz) the whole game: frames = interrupts, room, zone, stack",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "int (60 Hz) the whole game: VDP registers of Screen 2",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "int (60 Hz) the whole game: solid map in RAM = the room with its door",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "int (60 Hz) the whole game: every change hidden, else one interrupt a pass",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "int (60 Hz) the whole game: nothing written to the PSG's sound registers (0-13)",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "int (60 Hz) the whole game: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "int (60 Hz) the whole game: VICTORY at pass 19504, then 349 passes of input with the room still",
+   "pass": true,
+   "detail": "blow 59, defeat 68, door 4, end 1, hit 113, object 16, touch 3"
+  },
+  {
+   "check": "int (60 Hz) defeat: frame_ready every pass",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "int (60 Hz) defeat: the input byte = keys + joystick (0 while the blade is out)",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "int (60 Hz) defeat: room and explorer = the model",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "int (60 Hz) defeat: keys, seals, score, energy, doors, end, objects",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "int (60 Hz) defeat: blow, damage, enemies, sprite list = the model",
+   "pass": false,
+   "detail": "pass 138: (138, 0, 0, 0, 30, 1, 0, 1, 1, 127, 112, 2, 3, 0, 0, 0, 2, 0, 0, 16, 3, 0, 0, 0, 0, 0, 0, 0, 16, 3, 0, 0, 0, 0, 0, 111, 127, 68, 15), model (138, 0, 0, 0, 30, 0, 0, 1, 1, 127, 112, 2, 3, 0, 0, 0, 2, 0, 0, 16, 3, 0, 0, 0, 0, 0, 0, 0, 16, 3, 0, 0, 0, 0, 0, 111, 127, 68, 15)"
+  },
+  {
+   "check": "int (60 Hz) defeat: the sprite list in the VDP = the model",
+   "pass": false,
+   "detail": "pass 139: [], model [(111, 127, 68, 15)]"
+  },
+  {
+   "check": "int (60 Hz) defeat: screen = model, every pass",
+   "pass": false,
+   "detail": "pass 139 (room 5): pixel (132, 112) colour 14, model 15"
+  },
+  {
+   "check": "int (60 Hz) defeat: frames = interrupts, room, zone, stack",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "int (60 Hz) defeat: VDP registers of Screen 2",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "int (60 Hz) defeat: solid map in RAM = the room with its door",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "int (60 Hz) defeat: every change hidden, else one interrupt a pass",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "int (60 Hz) defeat: nothing written to the PSG's sound registers (0-13)",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "int (60 Hz) defeat: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "int (60 Hz) defeat: GAME OVER without help at pass 399 (the model: 399), then the room still",
+   "pass": true,
+   "detail": "touches 3"
+  },
+  {
+   "check": "int (60 Hz) the whole game: the RAM and the VRAM filled at random (two fillings, 500 passes): every pass = the model; the RAM written only in the areas of vars.asm and the stack",
+   "pass": true,
+   "detail": "stack 22 bytes"
+  },
+  {
+   "check": "int (60 Hz) the whole game: openMSX = the bench, every pass (RAM, VRAM, VDP and PSG registers, slots, T-states, the interrupts)",
+   "pass": true,
+   "detail": "19853 passes, 19944 interrupts"
+  },
+  {
+   "check": "int (60 Hz) the whole game: openMSX's screenshot of pass 64 = one of the bench's last pictures",
+   "pass": true,
+   "detail": "pass 64"
+  },
+  {
+   "check": "int (60 Hz) defeat: openMSX = the bench, every pass (RAM, VRAM, VDP and PSG registers, slots, T-states, the interrupts)",
+   "pass": true,
+   "detail": "748 passes, 750 interrupts"
+  }
+ ],
+ "facts": {
+  "step": "05-combat",
+  "cartridge": "e850bd942adad412",
+  "data": {
+   "objects": 20,
+   "doors": 4,
+   "enemies": 34
+  },
+  "routes": {
+   "the whole game": {
+    "room": 1,
+    "passes": 19853
+   },
+   "defeat": {
+    "room": 1,
+    "passes": 748
+   }
+  },
+  "eu the whole game": {
+   "passes": 19853,
+   "end_t": 1421879832,
+   "digest": "8cd8c39b61dd912b",
+   "changes": [
+    [
+     193,
+     5,
+     2,
+     2
+    ],
+    [
+     435,
+     4,
+     2,
+     2
+    ],
+    [
+     946,
+     0,
+     2,
+     2
+    ],
+    [
+     1692,
+     4,
+     2,
+     2
+    ],
+    [
+     1899,
+     5,
+     2,
+     2
+    ],
+    [
+     2228,
+     6,
+     2,
+     2
+    ],
+    [
+     3165,
+     2,
+     2,
+     2
+    ],
+    [
+     3648,
+     6,
+     2,
+     2
+    ],
+    [
+     4346,
+     5,
+     2,
+     2
+    ],
+    [
+     4885,
+     4,
+     2,
+     2
+    ],
+    [
+     5050,
+     8,
+     4,
+     4
+    ],
+    [
+     5645,
+     12,
+     2,
+     2
+    ],
+    [
+     6966,
+     13,
+     2,
+     2
+    ],
+    [
+     7452,
+     12,
+     2,
+     2
+    ],
+    [
+     8447,
+     8,
+     2,
+     2
+    ],
+    [
+     8932,
+     4,
+     6,
+     6
+    ],
+    [
+     9121,
+     5,
+     2,
+     2
+    ],
+    [
+     9370,
+     9,
+     2,
+     2
+    ],
+    [
+     10058,
+     5,
+     2,
+     2
+    ],
+    [
+     10244,
+     6,
+     2,
+     2
+    ],
+    [
+     11133,
+     7,
+     5,
+     5
+    ],
+    [
+     11537,
+     3,
+     2,
+     2
+    ],
+    [
+     12360,
+     7,
+     2,
+     2
+    ],
+    [
+     12648,
+     11,
+     2,
+     2
+    ],
+    [
+     13336,
+     7,
+     2,
+     2
+    ],
+    [
+     13775,
+     6,
+     6,
+     6
+    ],
+    [
+     14537,
+     5,
+     2,
+     2
+    ],
+    [
+     14996,
+     9,
+     2,
+     2
+    ],
+    [
+     15493,
+     10,
+     4,
+     4
+    ],
+    [
+     16114,
+     14,
+     2,
+     2
+    ],
+    [
+     16875,
+     15,
+     2,
+     2
+    ],
+    [
+     17887,
+     14,
+     2,
+     2
+    ],
+    [
+     18346,
+     10,
+     2,
+     2
+    ],
+    [
+     18748,
+     9,
+     6,
+     6
+    ],
+    [
+     19060,
+     5,
+     2,
+     2
+    ],
+    [
+     19362,
+     1,
+     2,
+     2
+    ]
+   ],
+   "events": {
+    "blow": 59,
+    "defeat": 68,
+    "door": 4,
+    "end": 1,
+    "hit": 113,
+    "object": 16,
+    "touch": 3
+   },
+   "game": [
+    0,
+    3,
+    10400,
+    6,
+    15,
+    2
+   ],
+   "room": 1
+  },
+  "eu defeat": {
+   "passes": 748,
+   "end_t": 54617375,
+   "digest": "6766d657507150a7",
+   "changes": [
+    [
+     51,
+     5,
+     2,
+     2
+    ]
+   ],
+   "events": {
+    "end": 1,
+    "hit": 1,
+    "touch": 3
+   },
+   "game": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "room": 5
+  },
+  "eu seeds": {
+   "stack_depth": 22
+  },
+  "int the whole game": {
+   "passes": 19853,
+   "end_t": 1192547994,
+   "digest": "cf9db145323c97a3",
+   "changes": [
+    [
+     193,
+     5,
+     3,
+     3
+    ],
+    [
+     435,
+     4,
+     3,
+     3
+    ],
+    [
+     946,
+     0,
+     3,
+     3
+    ],
+    [
+     1692,
+     4,
+     3,
+     3
+    ],
+    [
+     1899,
+     5,
+     3,
+     3
+    ],
+    [
+     2228,
+     6,
+     3,
+     3
+    ],
+    [
+     3165,
+     2,
+     3,
+     3
+    ],
+    [
+     3648,
+     6,
+     3,
+     3
+    ],
+    [
+     4346,
+     5,
+     3,
+     3
+    ],
+    [
+     4885,
+     4,
+     3,
+     3
+    ],
+    [
+     5050,
+     8,
+     5,
+     5
+    ],
+    [
+     5645,
+     12,
+     3,
+     3
+    ],
+    [
+     6966,
+     13,
+     3,
+     3
+    ],
+    [
+     7452,
+     12,
+     3,
+     3
+    ],
+    [
+     8447,
+     8,
+     3,
+     3
+    ],
+    [
+     8932,
+     4,
+     7,
+     7
+    ],
+    [
+     9121,
+     5,
+     3,
+     3
+    ],
+    [
+     9370,
+     9,
+     3,
+     3
+    ],
+    [
+     10058,
+     5,
+     3,
+     3
+    ],
+    [
+     10244,
+     6,
+     3,
+     3
+    ],
+    [
+     11133,
+     7,
+     6,
+     6
+    ],
+    [
+     11537,
+     3,
+     3,
+     3
+    ],
+    [
+     12360,
+     7,
+     3,
+     3
+    ],
+    [
+     12648,
+     11,
+     3,
+     3
+    ],
+    [
+     13336,
+     7,
+     3,
+     3
+    ],
+    [
+     13775,
+     6,
+     7,
+     7
+    ],
+    [
+     14537,
+     5,
+     3,
+     3
+    ],
+    [
+     14996,
+     9,
+     3,
+     3
+    ],
+    [
+     15493,
+     10,
+     5,
+     5
+    ],
+    [
+     16114,
+     14,
+     3,
+     3
+    ],
+    [
+     16875,
+     15,
+     3,
+     3
+    ],
+    [
+     17887,
+     14,
+     3,
+     3
+    ],
+    [
+     18346,
+     10,
+     3,
+     3
+    ],
+    [
+     18748,
+     9,
+     7,
+     7
+    ],
+    [
+     19060,
+     5,
+     3,
+     3
+    ],
+    [
+     19362,
+     1,
+     3,
+     3
+    ]
+   ],
+   "events": {
+    "blow": 59,
+    "defeat": 68,
+    "door": 4,
+    "end": 1,
+    "hit": 113,
+    "object": 16,
+    "touch": 3
+   },
+   "game": [
+    0,
+    3,
+    10400,
+    6,
+    15,
+    2
+   ],
+   "room": 1
+  },
+  "int defeat": {
+   "passes": 748,
+   "end_t": 45973604,
+   "digest": "da0350a0618af6eb",
+   "changes": [
+    [
+     51,
+     5,
+     3,
+     3
+    ]
+   ],
+   "events": {
+    "end": 1,
+    "hit": 1,
+    "touch": 3
+   },
+   "game": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "room": 5
+  },
+  "int seeds": {
+   "stack_depth": 22
+  }
+ },
+ "result": "FAIL",
+ "shows": {
+  "eu the whole game": {
+   "zone_start": 0,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 1818,
+   "bar_ink": 8,
+   "bats": [
+    {
+     "room": 4,
+     "at": [
+      140,
+      102
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 462,
+      "far": [
+       94,
+       6
+      ]
+     }
+    },
+    {
+     "room": 0,
+     "at": [
+      154,
+      118
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 947,
+      "far": [
+       12,
+       31
+      ]
+     }
+    },
+    {
+     "room": 4,
+     "at": [
+      125,
+      75
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 1693,
+      "far": [
+       12,
+       73
+      ]
+     }
+    },
+    {
+     "room": 2,
+     "at": [
+      163,
+      83
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 3174,
+      "far": [
+       71,
+       89
+      ]
+     }
+    },
+    {
+     "room": 4,
+     "at": [
+      140,
+      102
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 4912,
+      "far": [
+       94,
+       6
+      ]
+     }
+    },
+    {
+     "room": 8,
+     "at": [
+      146,
+      50
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 5051,
+      "far": [
+       28,
+       41
+      ]
+     }
+    },
+    {
+     "room": 12,
+     "at": [
+      63,
+      48
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 5646,
+      "far": [
+       33,
+       42
+      ]
+     }
+    },
+    {
+     "room": 13,
+     "at": [
+      104,
+      110
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 6967,
+      "far": [
+       50,
+       51
+      ]
+     }
+    },
+    {
+     "room": 12,
+     "at": [
+      76,
+      63
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 8327,
+      "far": [
+       95,
+       1
+      ]
+     }
+    },
+    {
+     "room": 8,
+     "at": [
+      128,
+      97
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 8448,
+      "far": [
+       76,
+       79
+      ]
+     }
+    },
+    {
+     "room": 4,
+     "at": [
+      107,
+      108
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 8933,
+      "far": [
+       2,
+       47
+      ]
+     }
+    },
+    {
+     "room": 9,
+     "at": [
+      95,
+      82
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 9372,
+      "far": [
+       44,
+       89
+      ]
+     }
+    },
+    {
+     "room": 7,
+     "at": [
+      144,
+      87
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 11218,
+      "far": [
+       94,
+       0
+      ]
+     }
+    },
+    {
+     "room": 3,
+     "at": [
+      93,
+      119
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 11538,
+      "far": [
+       82,
+       47
+      ]
+     }
+    },
+    {
+     "room": 7,
+     "at": [
+      163,
+      67
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 12361,
+      "far": [
+       60,
+       73
+      ]
+     }
+    },
+    {
+     "room": 11,
+     "at": [
+      135,
+      55
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 12649,
+      "far": [
+       66,
+       25
+      ]
+     }
+    },
+    {
+     "room": 7,
+     "at": [
+      164,
+      124
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 13337,
+      "far": [
+       82,
+       47
+      ]
+     }
+    },
+    {
+     "room": 9,
+     "at": [
+      131,
+      90
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 14998,
+      "far": [
+       66,
+       89
+      ]
+     }
+    },
+    {
+     "room": 10,
+     "at": [
+      102,
+      78
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 15684,
+      "far": [
+       94,
+       15
+      ]
+     }
+    },
+    {
+     "room": 14,
+     "at": [
+      109,
+      68
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 16124,
+      "far": [
+       63,
+       89
+      ]
+     }
+    },
+    {
+     "room": 15,
+     "at": [
+      116,
+      125
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 16876,
+      "far": [
+       50,
+       53
+      ]
+     }
+    },
+    {
+     "room": 14,
+     "at": [
+      134,
+      79
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 18113,
+      "far": [
+       95,
+       4
+      ]
+     }
+    },
+    {
+     "room": 10,
+     "at": [
+      159,
+      113
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 18347,
+      "far": [
+       44,
+       47
+      ]
+     }
+    },
+    {
+     "room": 9,
+     "at": [
+      92,
+      109
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 18907,
+      "far": [
+       95,
+       3
+      ]
+     }
+    }
+   ],
+   "flame_changes": 2494,
+   "energies": [
+    8,
+    6,
+    8,
+    6,
+    8,
+    6
+   ],
+   "joy_moves": 6517,
+   "events": {
+    "blow": 59,
+    "defeat": 68,
+    "door": 4,
+    "end": 1,
+    "hit": 113,
+    "object": 16,
+    "touch": 3
+   },
+   "game": [
+    0,
+    3,
+    10400,
+    6,
+    15,
+    2
+   ]
+  },
+  "eu defeat": {
+   "zone_start": 0,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 1818,
+   "bar_ink": 8,
+   "flame_changes": 93,
+   "energies": [
+    8,
+    6,
+    4,
+    2,
+    0
+   ],
+   "joy_moves": 134,
+   "events": {
+    "end": 1,
+    "hit": 1,
+    "touch": 3
+   },
+   "game": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ]
+  },
+  "int the whole game": {
+   "zone_start": 0,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 1818,
+   "bar_ink": 8,
+   "bats": [
+    {
+     "room": 4,
+     "at": [
+      140,
+      102
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 462,
+      "far": [
+       94,
+       6
+      ]
+     }
+    },
+    {
+     "room": 0,
+     "at": [
+      154,
+      118
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 947,
+      "far": [
+       12,
+       31
+      ]
+     }
+    },
+    {
+     "room": 4,
+     "at": [
+      125,
+      75
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 1693,
+      "far": [
+       12,
+       73
+      ]
+     }
+    },
+    {
+     "room": 2,
+     "at": [
+      163,
+      83
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 3174,
+      "far": [
+       71,
+       89
+      ]
+     }
+    },
+    {
+     "room": 4,
+     "at": [
+      140,
+      102
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 4912,
+      "far": [
+       94,
+       6
+      ]
+     }
+    },
+    {
+     "room": 8,
+     "at": [
+      146,
+      50
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 5051,
+      "far": [
+       28,
+       41
+      ]
+     }
+    },
+    {
+     "room": 12,
+     "at": [
+      63,
+      48
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 5646,
+      "far": [
+       33,
+       42
+      ]
+     }
+    },
+    {
+     "room": 13,
+     "at": [
+      104,
+      110
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 6967,
+      "far": [
+       50,
+       51
+      ]
+     }
+    },
+    {
+     "room": 12,
+     "at": [
+      76,
+      63
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 8327,
+      "far": [
+       95,
+       1
+      ]
+     }
+    },
+    {
+     "room": 8,
+     "at": [
+      128,
+      97
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 8448,
+      "far": [
+       76,
+       79
+      ]
+     }
+    },
+    {
+     "room": 4,
+     "at": [
+      107,
+      108
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 8933,
+      "far": [
+       2,
+       47
+      ]
+     }
+    },
+    {
+     "room": 9,
+     "at": [
+      95,
+      82
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 9372,
+      "far": [
+       44,
+       89
+      ]
+     }
+    },
+    {
+     "room": 7,
+     "at": [
+      144,
+      87
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 11218,
+      "far": [
+       94,
+       0
+      ]
+     }
+    },
+    {
+     "room": 3,
+     "at": [
+      93,
+      119
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 11538,
+      "far": [
+       82,
+       47
+      ]
+     }
+    },
+    {
+     "room": 7,
+     "at": [
+      163,
+      67
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 12361,
+      "far": [
+       60,
+       73
+      ]
+     }
+    },
+    {
+     "room": 11,
+     "at": [
+      135,
+      55
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 12649,
+      "far": [
+       66,
+       25
+      ]
+     }
+    },
+    {
+     "room": 7,
+     "at": [
+      164,
+      124
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 13337,
+      "far": [
+       82,
+       47
+      ]
+     }
+    },
+    {
+     "room": 9,
+     "at": [
+      131,
+      90
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 14998,
+      "far": [
+       66,
+       89
+      ]
+     }
+    },
+    {
+     "room": 10,
+     "at": [
+      102,
+      78
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 15684,
+      "far": [
+       94,
+       15
+      ]
+     }
+    },
+    {
+     "room": 14,
+     "at": [
+      109,
+      68
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 16124,
+      "far": [
+       63,
+       89
+      ]
+     }
+    },
+    {
+     "room": 15,
+     "at": [
+      116,
+      125
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 16876,
+      "far": [
+       50,
+       53
+      ]
+     }
+    },
+    {
+     "room": 14,
+     "at": [
+      134,
+      79
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 18113,
+      "far": [
+       95,
+       4
+      ]
+     }
+    },
+    {
+     "room": 10,
+     "at": [
+      159,
+      113
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 18347,
+      "far": [
+       44,
+       47
+      ]
+     }
+    },
+    {
+     "room": 9,
+     "at": [
+      92,
+      109
+     ],
+     "still_in_96x90": 0,
+     "woke_at": {
+      "pass": 18907,
+      "far": [
+       95,
+       3
+      ]
+     }
+    }
+   ],
+   "flame_changes": 2499,
+   "energies": [
+    8,
+    6,
+    8,
+    6,
+    8,
+    6
+   ],
+   "joy_moves": 6517,
+   "events": {
+    "blow": 59,
+    "defeat": 68,
+    "door": 4,
+    "end": 1,
+    "hit": 113,
+    "object": 16,
+    "touch": 3
+   },
+   "game": [
+    0,
+    3,
+    10400,
+    6,
+    15,
+    2
+   ]
+  },
+  "int defeat": {
+   "zone_start": 0,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 1818,
+   "bar_ink": 8,
+   "flame_changes": 93,
+   "energies": [
+    8,
+    6,
+    4,
+    2,
+    0
+   ],
+   "joy_moves": 134,
+   "events": {
+    "end": 1,
+    "hit": 1,
+    "touch": 3
+   },
+   "game": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ]
+  }
+ },
+ "folder": "/home/claude/msx/N1/variants/05-combat/05x-hidden-at-208",
+ "set": [],
+ "route": null,
+ "failed": 12,
+ "openmsx": "/usr/local/bin/openmsx",
+ "cbios": "/opt/openMSX/share/machines"
+}

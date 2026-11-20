@@ -1,0 +1,1092 @@
+{
+ "checks": [
+  {
+   "check": "build: 06-sound/game/build/manifest.json without problems; the cartridge = chain/chain.json's",
+   "pass": true,
+   "detail": "5b61f06f3420d9ce"
+  },
+  {
+   "check": "data: the rooms' records in the cartridge (door, objects, enemies) = the room files (with the open tiles of the doors)",
+   "pass": true,
+   "detail": "20 objects, 4 doors, 34 enemies"
+  },
+  {
+   "check": "data: the explorer's 16 sprite shapes in the VRAM after INIT = art_pieces.HERO_FRAMES, skin and clothes (msx_model.hero_colour)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "data: the nine images of the combat in the VRAM after INIT = art_pieces.COMBAT_FRAMES, their colours = msx_model.COMBAT_INKS",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "data: the music in the cartridge = music.json; read back = c64/score.py, every note with the PSG's period; the eight effects = c64/sfx.py",
+   "pass": true,
+   "detail": "1515 bytes, notes ['G#1', 'F#6']"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: frame_ready every pass",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: the input byte = keys + joystick (0 while the blade is out)",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: room and explorer = the model",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: keys, seals, score, energy, doors, end, objects",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: blow, damage, enemies, sprite list = the model",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: the sprite list in the VDP = the model",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: screen = model, every pass",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: frames = interrupts, room, zone, stack",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: VDP registers of Screen 2",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: solid map in RAM = the room with its door",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: every change hidden",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: the sounds asked = the model's, in order",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: every group of registers sent to the PSG = the model (psg_model), the other writes as they must be",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: the PSG's registers sent at the same T-state after every interrupt (the music's next frame always ready)",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: every effect taken, and the piece of an end, heard at the next interrupt",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM, PSG R7 10xxxxxx, the PSG with interrupts off",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: VICTORY at pass 19504, then 349 passes of input with the room still",
+   "pass": true,
+   "detail": "blow 59, defeat 68, door 4, end 1, hit 113, object 16, touch 3"
+  },
+  {
+   "check": "eu (50 Hz) defeat: frame_ready every pass",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "eu (50 Hz) defeat: the input byte = keys + joystick (0 while the blade is out)",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "eu (50 Hz) defeat: room and explorer = the model",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "eu (50 Hz) defeat: keys, seals, score, energy, doors, end, objects",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "eu (50 Hz) defeat: blow, damage, enemies, sprite list = the model",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "eu (50 Hz) defeat: the sprite list in the VDP = the model",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "eu (50 Hz) defeat: screen = model, every pass",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "eu (50 Hz) defeat: frames = interrupts, room, zone, stack",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "eu (50 Hz) defeat: VDP registers of Screen 2",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "eu (50 Hz) defeat: solid map in RAM = the room with its door",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "eu (50 Hz) defeat: every change hidden",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "eu (50 Hz) defeat: the sounds asked = the model's, in order",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "eu (50 Hz) defeat: every group of registers sent to the PSG = the model (psg_model), the other writes as they must be",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "eu (50 Hz) defeat: the PSG's registers sent at the same T-state after every interrupt (the music's next frame always ready)",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "eu (50 Hz) defeat: every effect taken, and the piece of an end, heard at the next interrupt",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "eu (50 Hz) defeat: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM, PSG R7 10xxxxxx, the PSG with interrupts off",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "eu (50 Hz) defeat: GAME OVER without help at pass 399 (the model: 399), then the room still",
+   "pass": true,
+   "detail": "touches 3"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: the RAM and the VRAM filled at random (two fillings, 500 passes): every pass = the model; the RAM written only in the areas of vars.asm and the stack",
+   "pass": true,
+   "detail": "stack 34 bytes"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: openMSX = the bench, every pass (RAM, VRAM, VDP and PSG registers, slots, T-states, the interrupts, every write to the PSG)",
+   "pass": true,
+   "detail": "19853 passes, 19908 interrupts, 238534 writes"
+  },
+  {
+   "check": "eu (50 Hz) the whole game: openMSX's screenshot of pass 64 = one of the bench's last pictures",
+   "pass": true,
+   "detail": "pass 64"
+  },
+  {
+   "check": "eu (50 Hz) defeat: openMSX = the bench, every pass (RAM, VRAM, VDP and PSG registers, slots, T-states, the interrupts, every write to the PSG)",
+   "pass": true,
+   "detail": "748 passes, 749 interrupts, 8680 writes"
+  },
+  {
+   "check": "int (60 Hz) the whole game: frame_ready every pass",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "int (60 Hz) the whole game: the input byte = keys + joystick (0 while the blade is out)",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "int (60 Hz) the whole game: room and explorer = the model",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "int (60 Hz) the whole game: keys, seals, score, energy, doors, end, objects",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "int (60 Hz) the whole game: blow, damage, enemies, sprite list = the model",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "int (60 Hz) the whole game: the sprite list in the VDP = the model",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "int (60 Hz) the whole game: screen = model, every pass",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "int (60 Hz) the whole game: frames = interrupts, room, zone, stack",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "int (60 Hz) the whole game: VDP registers of Screen 2",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "int (60 Hz) the whole game: solid map in RAM = the room with its door",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "int (60 Hz) the whole game: every change hidden",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "int (60 Hz) the whole game: the sounds asked = the model's, in order",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "int (60 Hz) the whole game: every group of registers sent to the PSG = the model (psg_model), the other writes as they must be",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "int (60 Hz) the whole game: the PSG's registers sent at the same T-state after every interrupt (the music's next frame always ready)",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "int (60 Hz) the whole game: every effect taken, and the piece of an end, heard at the next interrupt",
+   "pass": true,
+   "detail": "19853 passes"
+  },
+  {
+   "check": "int (60 Hz) the whole game: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM, PSG R7 10xxxxxx, the PSG with interrupts off",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "int (60 Hz) the whole game: VICTORY at pass 19504, then 349 passes of input with the room still",
+   "pass": true,
+   "detail": "blow 59, defeat 68, door 4, end 1, hit 113, object 16, touch 3"
+  },
+  {
+   "check": "int (60 Hz) defeat: frame_ready every pass",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "int (60 Hz) defeat: the input byte = keys + joystick (0 while the blade is out)",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "int (60 Hz) defeat: room and explorer = the model",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "int (60 Hz) defeat: keys, seals, score, energy, doors, end, objects",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "int (60 Hz) defeat: blow, damage, enemies, sprite list = the model",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "int (60 Hz) defeat: the sprite list in the VDP = the model",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "int (60 Hz) defeat: screen = model, every pass",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "int (60 Hz) defeat: frames = interrupts, room, zone, stack",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "int (60 Hz) defeat: VDP registers of Screen 2",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "int (60 Hz) defeat: solid map in RAM = the room with its door",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "int (60 Hz) defeat: every change hidden",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "int (60 Hz) defeat: the sounds asked = the model's, in order",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "int (60 Hz) defeat: every group of registers sent to the PSG = the model (psg_model), the other writes as they must be",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "int (60 Hz) defeat: the PSG's registers sent at the same T-state after every interrupt (the music's next frame always ready)",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "int (60 Hz) defeat: every effect taken, and the piece of an end, heard at the next interrupt",
+   "pass": true,
+   "detail": "748 passes"
+  },
+  {
+   "check": "int (60 Hz) defeat: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM, PSG R7 10xxxxxx, the PSG with interrupts off",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "int (60 Hz) defeat: GAME OVER without help at pass 399 (the model: 399), then the room still",
+   "pass": true,
+   "detail": "touches 3"
+  },
+  {
+   "check": "int (60 Hz) the whole game: the RAM and the VRAM filled at random (two fillings, 500 passes): every pass = the model; the RAM written only in the areas of vars.asm and the stack",
+   "pass": true,
+   "detail": "stack 34 bytes"
+  },
+  {
+   "check": "int (60 Hz) the whole game: openMSX = the bench, every pass (RAM, VRAM, VDP and PSG registers, slots, T-states, the interrupts, every write to the PSG)",
+   "pass": true,
+   "detail": "19853 passes, 19944 interrupts, 238930 writes"
+  },
+  {
+   "check": "int (60 Hz) the whole game: openMSX's screenshot of pass 64 = one of the bench's last pictures",
+   "pass": true,
+   "detail": "pass 64"
+  },
+  {
+   "check": "int (60 Hz) defeat: openMSX = the bench, every pass (RAM, VRAM, VDP and PSG registers, slots, T-states, the interrupts, every write to the PSG)",
+   "pass": true,
+   "detail": "748 passes, 750 interrupts, 8691 writes"
+  },
+  {
+   "check": "mutation joystick_read_unguarded: stopped by \"psgdi\"",
+   "pass": true,
+   "detail": "the whole game, pass 1; failed: psgdi"
+  },
+  {
+   "check": "mutation slash_not_asked: stopped by \"calls\"",
+   "pass": true,
+   "detail": "the whole game, pass 62; failed: calls"
+  },
+  {
+   "check": "mutation register_10_not_sent: stopped by \"psg\"",
+   "pass": true,
+   "detail": "the whole game, pass 1; failed: psg"
+  }
+ ],
+ "facts": {
+  "step": "06-sound",
+  "cartridge": "5b61f06f3420d9ce",
+  "data": {
+   "objects": 20,
+   "doors": 4,
+   "enemies": 34
+  },
+  "music": {
+   "differ": [],
+   "score": [],
+   "periods_wrong": [],
+   "notes_played": [
+    "G#1",
+    "F#6"
+   ],
+   "effects_read_back": true,
+   "effect_frames": {
+    "slash": 9,
+    "hit": 9,
+    "dust": 20,
+    "pickup": 23,
+    "door": 24,
+    "hurt": 20,
+    "lost": 63,
+    "won": 43
+   },
+   "bytes": 1515
+  },
+  "routes": {
+   "the whole game": {
+    "room": 1,
+    "passes": 19853
+   },
+   "defeat": {
+    "room": 1,
+    "passes": 748
+   }
+  },
+  "eu the whole game": {
+   "passes": 19853,
+   "end_t": 1421883935,
+   "digest": "678f02e6fef711df",
+   "changes": [
+    [
+     193,
+     5,
+     2,
+     2
+    ],
+    [
+     435,
+     4,
+     2,
+     2
+    ],
+    [
+     946,
+     0,
+     2,
+     2
+    ],
+    [
+     1692,
+     4,
+     2,
+     2
+    ],
+    [
+     1899,
+     5,
+     2,
+     2
+    ],
+    [
+     2228,
+     6,
+     2,
+     2
+    ],
+    [
+     3165,
+     2,
+     2,
+     2
+    ],
+    [
+     3648,
+     6,
+     2,
+     2
+    ],
+    [
+     4346,
+     5,
+     2,
+     2
+    ],
+    [
+     4885,
+     4,
+     2,
+     2
+    ],
+    [
+     5050,
+     8,
+     4,
+     4
+    ],
+    [
+     5645,
+     12,
+     2,
+     2
+    ],
+    [
+     6966,
+     13,
+     2,
+     2
+    ],
+    [
+     7452,
+     12,
+     2,
+     2
+    ],
+    [
+     8447,
+     8,
+     2,
+     2
+    ],
+    [
+     8932,
+     4,
+     6,
+     6
+    ],
+    [
+     9121,
+     5,
+     2,
+     2
+    ],
+    [
+     9370,
+     9,
+     2,
+     2
+    ],
+    [
+     10058,
+     5,
+     2,
+     2
+    ],
+    [
+     10244,
+     6,
+     2,
+     2
+    ],
+    [
+     11133,
+     7,
+     5,
+     5
+    ],
+    [
+     11537,
+     3,
+     2,
+     2
+    ],
+    [
+     12360,
+     7,
+     2,
+     2
+    ],
+    [
+     12648,
+     11,
+     2,
+     2
+    ],
+    [
+     13336,
+     7,
+     2,
+     2
+    ],
+    [
+     13775,
+     6,
+     6,
+     6
+    ],
+    [
+     14537,
+     5,
+     2,
+     2
+    ],
+    [
+     14996,
+     9,
+     2,
+     2
+    ],
+    [
+     15493,
+     10,
+     4,
+     4
+    ],
+    [
+     16114,
+     14,
+     2,
+     2
+    ],
+    [
+     16875,
+     15,
+     2,
+     2
+    ],
+    [
+     17887,
+     14,
+     2,
+     2
+    ],
+    [
+     18346,
+     10,
+     2,
+     2
+    ],
+    [
+     18748,
+     9,
+     6,
+     6
+    ],
+    [
+     19060,
+     5,
+     2,
+     2
+    ],
+    [
+     19362,
+     1,
+     2,
+     2
+    ]
+   ],
+   "events": {
+    "blow": 59,
+    "defeat": 68,
+    "door": 4,
+    "end": 1,
+    "hit": 113,
+    "object": 16,
+    "touch": 3
+   },
+   "fifth_sprite_passes": 81,
+   "game": [
+    0,
+    3,
+    10400,
+    6,
+    15,
+    2
+   ],
+   "sound": {
+    "calls": {
+     "slash": 145,
+     "hit": 80,
+     "dust": 68,
+     "pickup": 16,
+     "door": 4,
+     "hurt": 3,
+     "won": 1
+    },
+    "late_flushes": 0,
+    "heard": 2,
+    "flush_after_interrupt": 306,
+    "groups": 19911,
+    "kinds": {
+     "now": 3,
+     "music": 19908,
+     "effects": 0
+    }
+   },
+   "psg_digest": "1c5baa8bb934d4b8",
+   "room": 1
+  },
+  "eu defeat": {
+   "passes": 748,
+   "end_t": 54621476,
+   "digest": "9076ed6979d00c7f",
+   "changes": [
+    [
+     51,
+     5,
+     2,
+     2
+    ]
+   ],
+   "events": {
+    "end": 1,
+    "hit": 1,
+    "touch": 3
+   },
+   "fifth_sprite_passes": 0,
+   "game": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "sound": {
+    "calls": {
+     "hurt": 4,
+     "lost": 1
+    },
+    "late_flushes": 0,
+    "heard": 2,
+    "flush_after_interrupt": 306,
+    "groups": 752,
+    "kinds": {
+     "now": 3,
+     "music": 749,
+     "effects": 0
+    }
+   },
+   "psg_digest": "b6cd4322ebfe9988",
+   "room": 5
+  },
+  "eu seeds": {
+   "stack_depth": 34
+  },
+  "int the whole game": {
+   "passes": 19853,
+   "end_t": 1192611831,
+   "digest": "29feafc1dfbde5a2",
+   "changes": [
+    [
+     193,
+     5,
+     3,
+     3
+    ],
+    [
+     435,
+     4,
+     3,
+     3
+    ],
+    [
+     946,
+     0,
+     3,
+     3
+    ],
+    [
+     1692,
+     4,
+     3,
+     3
+    ],
+    [
+     1899,
+     5,
+     3,
+     3
+    ],
+    [
+     2228,
+     6,
+     3,
+     3
+    ],
+    [
+     3165,
+     2,
+     3,
+     3
+    ],
+    [
+     3648,
+     6,
+     3,
+     3
+    ],
+    [
+     4346,
+     5,
+     3,
+     3
+    ],
+    [
+     4885,
+     4,
+     3,
+     3
+    ],
+    [
+     5050,
+     8,
+     5,
+     5
+    ],
+    [
+     5645,
+     12,
+     3,
+     3
+    ],
+    [
+     6966,
+     13,
+     3,
+     3
+    ],
+    [
+     7452,
+     12,
+     3,
+     3
+    ],
+    [
+     8447,
+     8,
+     3,
+     3
+    ],
+    [
+     8932,
+     4,
+     7,
+     7
+    ],
+    [
+     9121,
+     5,
+     3,
+     3
+    ],
+    [
+     9370,
+     9,
+     3,
+     3
+    ],
+    [
+     10058,
+     5,
+     3,
+     3
+    ],
+    [
+     10244,
+     6,
+     3,
+     3
+    ],
+    [
+     11133,
+     7,
+     6,
+     6
+    ],
+    [
+     11537,
+     3,
+     3,
+     3
+    ],
+    [
+     12360,
+     7,
+     3,
+     3
+    ],
+    [
+     12648,
+     11,
+     3,
+     3
+    ],
+    [
+     13336,
+     7,
+     3,
+     3
+    ],
+    [
+     13775,
+     6,
+     7,
+     7
+    ],
+    [
+     14537,
+     5,
+     3,
+     3
+    ],
+    [
+     14996,
+     9,
+     3,
+     3
+    ],
+    [
+     15493,
+     10,
+     5,
+     5
+    ],
+    [
+     16114,
+     14,
+     3,
+     3
+    ],
+    [
+     16875,
+     15,
+     3,
+     3
+    ],
+    [
+     17887,
+     14,
+     3,
+     3
+    ],
+    [
+     18346,
+     10,
+     3,
+     3
+    ],
+    [
+     18748,
+     9,
+     7,
+     7
+    ],
+    [
+     19060,
+     5,
+     3,
+     3
+    ],
+    [
+     19362,
+     1,
+     3,
+     3
+    ]
+   ],
+   "events": {
+    "blow": 59,
+    "defeat": 68,
+    "door": 4,
+    "end": 1,
+    "hit": 113,
+    "object": 16,
+    "touch": 3
+   },
+   "fifth_sprite_passes": 81,
+   "game": [
+    0,
+    3,
+    10400,
+    6,
+    15,
+    2
+   ],
+   "sound": {
+    "calls": {
+     "slash": 145,
+     "hit": 80,
+     "dust": 68,
+     "pickup": 16,
+     "door": 4,
+     "hurt": 3,
+     "won": 1
+    },
+    "late_flushes": 0,
+    "heard": 2,
+    "flush_after_interrupt": 306,
+    "groups": 19947,
+    "kinds": {
+     "now": 3,
+     "music": 19944,
+     "effects": 0
+    }
+   },
+   "psg_digest": "f1db84e046bdb650",
+   "room": 1
+  },
+  "int defeat": {
+   "passes": 748,
+   "end_t": 46037440,
+   "digest": "a1d24c1c9621e488",
+   "changes": [
+    [
+     51,
+     5,
+     3,
+     3
+    ]
+   ],
+   "events": {
+    "end": 1,
+    "hit": 1,
+    "touch": 3
+   },
+   "fifth_sprite_passes": 0,
+   "game": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "sound": {
+    "calls": {
+     "hurt": 4,
+     "lost": 1
+    },
+    "late_flushes": 0,
+    "heard": 2,
+    "flush_after_interrupt": 306,
+    "groups": 753,
+    "kinds": {
+     "now": 3,
+     "music": 750,
+     "effects": 0
+    }
+   },
+   "psg_digest": "45c65cf8cc678b2a",
+   "room": 5
+  },
+  "int seeds": {
+   "stack_depth": 34
+  },
+  "mutations": {
+   "joystick_read_unguarded": true,
+   "slash_not_asked": true,
+   "register_10_not_sent": true
+  }
+ },
+ "failed": 0,
+ "openmsx": "/usr/local/bin/openmsx",
+ "cbios": "/opt/openMSX/share/machines"
+}

@@ -1,0 +1,277 @@
+{
+ "checks": [
+  {
+   "check": "build: 02b-joystick-port-2/game/build/manifest.json without problems; the cartridge = its manifest's (built by the folder's tools)",
+   "pass": true,
+   "detail": "397d70bcbf15b621"
+  },
+  {
+   "check": "data: the rooms' records in the cartridge (door, objects, enemies) = the room files (the doors' tiles not yet in the cartridge)",
+   "pass": true,
+   "detail": "20 objects, 4 doors, 34 enemies"
+  },
+  {
+   "check": "data: the explorer's 16 sprite shapes in the VRAM after INIT = art_pieces.HERO_FRAMES, skin and clothes (msx_model.hero_colour)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "eu (50 Hz) Moss Gate: frame_ready every pass",
+   "pass": true,
+   "detail": "3158 passes"
+  },
+  {
+   "check": "eu (50 Hz) Moss Gate: the input byte = keys + joystick",
+   "pass": true,
+   "detail": "3158 passes"
+  },
+  {
+   "check": "eu (50 Hz) Moss Gate: room and explorer = the model",
+   "pass": true,
+   "detail": "3158 passes"
+  },
+  {
+   "check": "eu (50 Hz) Moss Gate: the sprite list in the VDP = the model",
+   "pass": true,
+   "detail": "3158 passes"
+  },
+  {
+   "check": "eu (50 Hz) Moss Gate: screen = model, every pass",
+   "pass": true,
+   "detail": "3158 passes"
+  },
+  {
+   "check": "eu (50 Hz) Moss Gate: frames = interrupts, room, zone, stack",
+   "pass": true,
+   "detail": "3158 passes"
+  },
+  {
+   "check": "eu (50 Hz) Moss Gate: VDP registers of Screen 2",
+   "pass": true,
+   "detail": "3158 passes"
+  },
+  {
+   "check": "eu (50 Hz) Moss Gate: solid map in RAM = the room with its door",
+   "pass": true,
+   "detail": "3158 passes"
+  },
+  {
+   "check": "eu (50 Hz) Moss Gate: one interrupt a pass",
+   "pass": true,
+   "detail": "3158 passes"
+  },
+  {
+   "check": "eu (50 Hz) Moss Gate: nothing written to the PSG's sound registers (0-13)",
+   "pass": true,
+   "detail": "3158 passes"
+  },
+  {
+   "check": "eu (50 Hz) Moss Gate: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "eu (50 Hz) Moss Gate: the RAM and the VRAM filled at random (two fillings, 500 passes): every pass = the model; the RAM written only in the areas of vars.asm and the stack",
+   "pass": true,
+   "detail": "stack 14 bytes"
+  },
+  {
+   "check": "eu (50 Hz) Moss Gate: openMSX = the bench, every pass (RAM, VRAM, VDP and PSG registers, slots, T-states, the interrupts)",
+   "pass": true,
+   "detail": "3158 passes, 3158 interrupts"
+  },
+  {
+   "check": "eu (50 Hz) Moss Gate: openMSX's screenshot of pass 164 = one of the bench's last pictures",
+   "pass": true,
+   "detail": "pass 164"
+  },
+  {
+   "check": "int (60 Hz) Moss Gate: frame_ready every pass",
+   "pass": true,
+   "detail": "3158 passes"
+  },
+  {
+   "check": "int (60 Hz) Moss Gate: the input byte = keys + joystick",
+   "pass": true,
+   "detail": "3158 passes"
+  },
+  {
+   "check": "int (60 Hz) Moss Gate: room and explorer = the model",
+   "pass": true,
+   "detail": "3158 passes"
+  },
+  {
+   "check": "int (60 Hz) Moss Gate: the sprite list in the VDP = the model",
+   "pass": true,
+   "detail": "3158 passes"
+  },
+  {
+   "check": "int (60 Hz) Moss Gate: screen = model, every pass",
+   "pass": true,
+   "detail": "3158 passes"
+  },
+  {
+   "check": "int (60 Hz) Moss Gate: frames = interrupts, room, zone, stack",
+   "pass": true,
+   "detail": "3158 passes"
+  },
+  {
+   "check": "int (60 Hz) Moss Gate: VDP registers of Screen 2",
+   "pass": true,
+   "detail": "3158 passes"
+  },
+  {
+   "check": "int (60 Hz) Moss Gate: solid map in RAM = the room with its door",
+   "pass": true,
+   "detail": "3158 passes"
+  },
+  {
+   "check": "int (60 Hz) Moss Gate: one interrupt a pass",
+   "pass": true,
+   "detail": "3158 passes"
+  },
+  {
+   "check": "int (60 Hz) Moss Gate: nothing written to the PSG's sound registers (0-13)",
+   "pass": true,
+   "detail": "3158 passes"
+  },
+  {
+   "check": "int (60 Hz) Moss Gate: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "int (60 Hz) Moss Gate: the RAM and the VRAM filled at random (two fillings, 500 passes): every pass = the model; the RAM written only in the areas of vars.asm and the stack",
+   "pass": true,
+   "detail": "stack 14 bytes"
+  },
+  {
+   "check": "int (60 Hz) Moss Gate: openMSX = the bench, every pass (RAM, VRAM, VDP and PSG registers, slots, T-states, the interrupts)",
+   "pass": true,
+   "detail": "3158 passes, 3158 interrupts"
+  },
+  {
+   "check": "int (60 Hz) Moss Gate: openMSX's screenshot of pass 164 = one of the bench's last pictures",
+   "pass": true,
+   "detail": "pass 164"
+  }
+ ],
+ "facts": {
+  "step": "02-explorer",
+  "cartridge": "397d70bcbf15b621",
+  "data": {
+   "objects": 20,
+   "doors": 4,
+   "enemies": 34
+  },
+  "routes": {
+   "Moss Gate": {
+    "room": 1,
+    "far": {
+     "north": [
+      29,
+      38
+     ],
+     "south": [
+      109,
+      160
+     ],
+     "west": [
+      29,
+      38
+     ],
+     "east": [
+      211,
+      38
+     ]
+    },
+    "passes": 3158
+   }
+  },
+  "eu Moss Gate": {
+   "passes": 3158,
+   "end_t": 226534121,
+   "digest": "3d78430aaa228f64",
+   "changes": [],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 1
+  },
+  "eu seeds": {
+   "stack_depth": 14
+  },
+  "int Moss Gate": {
+   "passes": 3158,
+   "end_t": 189818761,
+   "digest": "af307b02ab233bc4",
+   "changes": [],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 1
+  },
+  "int seeds": {
+   "stack_depth": 14
+  }
+ },
+ "result": "PASS",
+ "shows": {
+  "eu Moss Gate": {
+   "zone_start": 0,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 1818,
+   "flame_changes": 394,
+   "energies": [],
+   "joy_moves": 1137,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  "int Moss Gate": {
+   "zone_start": 0,
+   "skin": 9,
+   "clothes": 10,
+   "green_room": 1818,
+   "flame_changes": 394,
+   "energies": [],
+   "joy_moves": 1137,
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  }
+ },
+ "folder": "/home/claude/msx/N1/variants/02-explorer/02b-joystick-port-2",
+ "set": [
+  "VS.JOY_PORT = 2"
+ ],
+ "route": null,
+ "failed": 0,
+ "openmsx": "/usr/local/bin/openmsx",
+ "cbios": "/opt/openMSX/share/machines"
+}

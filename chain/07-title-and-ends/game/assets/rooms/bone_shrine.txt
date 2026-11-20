@@ -1,0 +1,20 @@
+# Cryptmorrow ZX room 13, zone A. Symbols: see dungeon.txt.
+# Ported from the C64 map: 20 columns become 16.
+# The first seal lies before the altar.
+zone: A
+name: BONE SHRINE
+object: seal 8 3
+enemy: skeleton 8 5 h fast
+enemy: bat 4 3
+enemy: bat 11 3
+map:
+################
+#####T#####t####
+##.....AAA....##
+##............##
+##...P.....P..##
+##...P.....P..##
+E.............##
+E...b.......b.##
+##..m......m..##
+################

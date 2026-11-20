@@ -1,0 +1,12 @@
+# The sources stay as they are, with LF line ends on every system, so
+# that SHA256SUMS.txt and verify.py agree after a checkout; everything
+# else (cartridges, symbols, pictures, the ROMs of C-BIOS) is bytes.
+* -text
+*.asm text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.csv text eol=lf
+*.json text eol=lf
+.gitattributes text eol=lf
+.gitignore text eol=lf

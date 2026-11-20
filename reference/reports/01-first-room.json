@@ -1,0 +1,210 @@
+{
+ "checks": [
+  {
+   "check": "build: 01-first-room/game/build/manifest.json without problems; the cartridge = chain/chain.json's",
+   "pass": true,
+   "detail": "1f33844596f28e36"
+  },
+  {
+   "check": "data: the rooms' records in the cartridge (door, objects, enemies) = the room files (the doors' tiles not yet in the cartridge)",
+   "pass": true,
+   "detail": "20 objects, 4 doors, 34 enemies"
+  },
+  {
+   "check": "eu (50 Hz) the first room: frame_ready every pass",
+   "pass": true,
+   "detail": "402 passes"
+  },
+  {
+   "check": "eu (50 Hz) the first room: the sprite list in the VDP = the model",
+   "pass": true,
+   "detail": "402 passes"
+  },
+  {
+   "check": "eu (50 Hz) the first room: screen = model, every pass",
+   "pass": true,
+   "detail": "402 passes"
+  },
+  {
+   "check": "eu (50 Hz) the first room: frames = interrupts, room, zone, stack",
+   "pass": true,
+   "detail": "402 passes"
+  },
+  {
+   "check": "eu (50 Hz) the first room: VDP registers of Screen 2",
+   "pass": true,
+   "detail": "402 passes"
+  },
+  {
+   "check": "eu (50 Hz) the first room: solid map in RAM = the room with its door",
+   "pass": true,
+   "detail": "402 passes"
+  },
+  {
+   "check": "eu (50 Hz) the first room: one interrupt a pass",
+   "pass": true,
+   "detail": "402 passes"
+  },
+  {
+   "check": "eu (50 Hz) the first room: nothing written to the PSG's sound registers (0-13)",
+   "pass": true,
+   "detail": "402 passes"
+  },
+  {
+   "check": "eu (50 Hz) the first room: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "eu (50 Hz) the first room: the RAM and the VRAM filled at random (two fillings, 402 passes): every pass = the model; the RAM written only in the areas of vars.asm and the stack",
+   "pass": true,
+   "detail": "stack 14 bytes"
+  },
+  {
+   "check": "eu (50 Hz) the first room: openMSX = the bench, every pass (RAM, VRAM, VDP and PSG registers, slots, T-states, the interrupts)",
+   "pass": true,
+   "detail": "402 passes, 402 interrupts"
+  },
+  {
+   "check": "eu (50 Hz) the first room: openMSX's screenshot of pass 11 = one of the bench's last pictures",
+   "pass": true,
+   "detail": "pass 11"
+  },
+  {
+   "check": "int (60 Hz) the first room: frame_ready every pass",
+   "pass": true,
+   "detail": "402 passes"
+  },
+  {
+   "check": "int (60 Hz) the first room: the sprite list in the VDP = the model",
+   "pass": true,
+   "detail": "402 passes"
+  },
+  {
+   "check": "int (60 Hz) the first room: screen = model, every pass",
+   "pass": true,
+   "detail": "402 passes"
+  },
+  {
+   "check": "int (60 Hz) the first room: frames = interrupts, room, zone, stack",
+   "pass": true,
+   "detail": "402 passes"
+  },
+  {
+   "check": "int (60 Hz) the first room: VDP registers of Screen 2",
+   "pass": true,
+   "detail": "402 passes"
+  },
+  {
+   "check": "int (60 Hz) the first room: solid map in RAM = the room with its door",
+   "pass": true,
+   "detail": "402 passes"
+  },
+  {
+   "check": "int (60 Hz) the first room: one interrupt a pass",
+   "pass": true,
+   "detail": "402 passes"
+  },
+  {
+   "check": "int (60 Hz) the first room: nothing written to the PSG's sound registers (0-13)",
+   "pass": true,
+   "detail": "402 passes"
+  },
+  {
+   "check": "int (60 Hz) the first room: no VRAM access closer than 29 T in the picture, the VDP's address with interrupts off, no write to ROM",
+   "pass": true,
+   "detail": "{'29T': None, 'ctrl': None, 'rom': None, 'r7': None, 'psgdi': None}"
+  },
+  {
+   "check": "int (60 Hz) the first room: the RAM and the VRAM filled at random (two fillings, 402 passes): every pass = the model; the RAM written only in the areas of vars.asm and the stack",
+   "pass": true,
+   "detail": "stack 14 bytes"
+  },
+  {
+   "check": "int (60 Hz) the first room: openMSX = the bench, every pass (RAM, VRAM, VDP and PSG registers, slots, T-states, the interrupts)",
+   "pass": true,
+   "detail": "402 passes, 402 interrupts"
+  },
+  {
+   "check": "int (60 Hz) the first room: openMSX's screenshot of pass 11 = one of the bench's last pictures",
+   "pass": true,
+   "detail": "pass 11"
+  },
+  {
+   "check": "mutation third_without_inc: stopped by \"screen\"",
+   "pass": true,
+   "detail": "the first room, pass 1; failed: screen"
+  },
+  {
+   "check": "mutation status_not_read: stopped by \"reached\"",
+   "pass": true,
+   "detail": "the first room, pass 1; failed: reached"
+  },
+  {
+   "check": "mutation names_in_rom: stopped by \"rom\"",
+   "pass": true,
+   "detail": "the first room, pass 1; failed: screen, rom"
+  }
+ ],
+ "facts": {
+  "step": "01-first-room",
+  "cartridge": "1f33844596f28e36",
+  "data": {
+   "objects": 20,
+   "doors": 4,
+   "enemies": 34
+  },
+  "routes": {
+   "the first room": {
+    "room": 1,
+    "passes": 402
+   }
+  },
+  "eu the first room": {
+   "passes": 402,
+   "end_t": 29852992,
+   "digest": "1f8e5befe0a734a4",
+   "changes": [],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 1
+  },
+  "eu seeds": {
+   "stack_depth": 14
+  },
+  "int the first room": {
+   "passes": 402,
+   "end_t": 25184402,
+   "digest": "237ba17326f2deff",
+   "changes": [],
+   "events": {},
+   "game": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ],
+   "room": 1
+  },
+  "int seeds": {
+   "stack_depth": 14
+  },
+  "mutations": {
+   "third_without_inc": true,
+   "status_not_read": true,
+   "names_in_rom": true
+  }
+ },
+ "failed": 0,
+ "openmsx": "/usr/local/bin/openmsx",
+ "cbios": "/opt/openMSX/share/machines"
+}

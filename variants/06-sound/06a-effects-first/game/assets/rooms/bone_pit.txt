@@ -1,0 +1,18 @@
+# Cryptmorrow ZX room 0, atrio. Symbols: see dungeon.txt.
+# Ported from the C64 map: 20 columns become 16.
+name: BONE PIT
+object: treasure 12 3
+object: potion 3 7
+enemy: skeleton 7 2 h fast
+enemy: bat 10 6
+map:
+################
+####T#n##n#t####
+##............##
+##..b......b..##
+##...P....P...##
+##...P....P...##
+##..b...b..b..##
+##.m..........##
+##....b...m...##
+########EE######
